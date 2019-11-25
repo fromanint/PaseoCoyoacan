@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Nov 25 08:36:42 CST 2019
+#Mon Nov 25 12:07:44 CST 2019
 20.base=/Users/RomanInteractive/PaseoCoyoacan/Temp/gradleOut/build/intermediates/merged_assets/release/out
 143.base=/Users/RomanInteractive/PaseoCoyoacan/Temp/gradleOut/build/intermediates/merged_assets/release/out
 237.path=bin/Data/sharedassets1.assets.split131
