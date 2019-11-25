@@ -605,7 +605,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 42029827}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &42029833
@@ -731,7 +731,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 51006921}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &51006927
@@ -782,6 +782,125 @@ Material:
     m_Floats: []
     m_Colors:
     - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+--- !u!1001 &62467013
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1972723038}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Name
+      value: Frida
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 8f81fce34ae184a33820e5531d457713, type: 2}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.14800002
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.106000006
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.154
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.5912602
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.38782927
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.3878292
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.59126
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 383.475
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90.00001
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.063509285
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.06350925
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.06350925
+      objectReference: {fileID: 0}
+    - target: {fileID: -2039348181509844026, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b434c2960758c834488645fc3b2323b5, type: 2}
+    - target: {fileID: -1316743014691780232, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cda18d8da8966c04599f8f1fbe83a823, type: 2}
+    - target: {fileID: -1149613533337950434, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b143e22480cf7324894254d9c6ce1e0e, type: 2}
+    - target: {fileID: 596722786947938931, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3c4b993dcae23eb4ca3334a93eae6b1d, type: 2}
+    - target: {fileID: 1651062367082650294, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cda18d8da8966c04599f8f1fbe83a823, type: 2}
+    - target: {fileID: 4054321849461254258, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a6a10bbefce0a1648ad1b25d11e0d300, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 20e4837d77bf74a189de12a3c3abcbd5, type: 3}
 --- !u!43 &63115198
 Mesh:
   m_ObjectHideFlags: 0
@@ -1436,7 +1555,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 104590111}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &104590117
@@ -1586,34 +1705,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!21 &125352158
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'Coyoacan-30Material
-
-    15262'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 32dcb65f1ff94746a4588a33c5f2fd01, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &134150248
 GameObject:
   m_ObjectHideFlags: 0
@@ -1643,7 +1734,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1578288573}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &134150250
 AudioSource:
@@ -2095,34 +2186,6 @@ Mesh:
     offset: 0
     size: 0
     path: 
---- !u!21 &161664457
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'Coyoacan-5Material
-
-    16202'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 3041e9b651134283b7e77ae9a16c36f4, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!21 &180966633
 Material:
   serializedVersion: 6
@@ -2278,34 +2341,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!21 &195683580
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'Coyoacan-22Material
-
-    15884'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: b05551e5f3604e5b8f072f5f1b76966d, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &198999826
 GameObject:
   m_ObjectHideFlags: 0
@@ -2409,7 +2444,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 198999826}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &198999832
@@ -2745,6 +2780,34 @@ Material:
     m_TexEnvs:
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 3220f28e1dbe4906b34f6aede54ca5cb, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+--- !u!21 &267518645
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'Coyoacan-6Material
+
+    24096'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: ef8411be4edb4f12976d16c4174286f2, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -3489,7 +3552,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 329312865}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &329312871
@@ -3615,7 +3678,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 335917423}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &335917429
@@ -4705,34 +4768,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!21 &420434374
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'Coyoacan-6Material
-
-    16128'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: ef8411be4edb4f12976d16c4174286f2, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &425667128
 GameObject:
   m_ObjectHideFlags: 0
@@ -4860,34 +4895,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!21 &431079831
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'Coyoacan-3Material
-
-    16114'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 49ec66624a3640c3ab78887a591cc1a7, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!43 &434964016
 Mesh:
   m_ObjectHideFlags: 0
@@ -5356,7 +5363,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &489350822
 Transform:
   m_ObjectHideFlags: 0
@@ -5928,7 +5935,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 576867888}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &576867894
@@ -6372,7 +6379,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 605733633}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &605733639
@@ -6484,7 +6491,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1801881629}
+  - {fileID: 1507045289}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6526,7 +6533,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 631031771}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &631031777
@@ -6803,34 +6810,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!21 &652534194
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'Coyoacan-38Material
-
-    15616'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: e554934191b14b0aad1bc4810cc39743, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1001 &664247475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6841,8 +6820,13 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 20e4837d77bf74a189de12a3c3abcbd5,
         type: 3}
       propertyPath: m_Name
-      value: Frida TPose
+      value: Frida
       objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6413c92d651ba4177968edaa93ff9947, type: 2}
     - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6901,17 +6885,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 0.1550837
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 0.1550837
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 1
+      value: 0.1550837
       objectReference: {fileID: 0}
     - target: {fileID: -2039348181509844026, guid: 20e4837d77bf74a189de12a3c3abcbd5,
         type: 3}
@@ -6951,7 +6935,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 664247475}
   m_PrefabAsset: {fileID: 0}
---- !u!21 &689443756
+--- !u!21 &672850079
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -6960,7 +6944,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: 'Coyoacan-34Material
 
-    16186'
+    24158'
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -7040,7 +7024,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1461174819}
+  - {fileID: 2070517579}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7082,7 +7066,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 699937782}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &699937788
@@ -7180,7 +7164,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 1e-45, y: 7.1e-44, z: 0, w: 5.170347e+19}
+  m_BoundingSphereOverride: {x: 4.5827e-41, y: -8.581667e+14, z: 4.5827e-41, w: -8.581715e+14}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -7446,7 +7430,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 125352158}
+  - {fileID: 1043628568}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -7488,7 +7472,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 710461274}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &710461280
@@ -7511,34 +7495,6 @@ MonoBehaviour:
   mImageTargetType: 0
   mWidth: 0.12065
   mHeight: 0.0804137
---- !u!21 &718188372
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'RAPortadaMaterial
-
-    15452'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 00a89d8216c04517adc7b6241458de55, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!43 &720563994
 Mesh:
   m_ObjectHideFlags: 0
@@ -7702,6 +7658,34 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!21 &723856881
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'Coyoacan-42Material
+
+    23408'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 2fd17e1048d54dceafba502e347c1e84, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &725533767
 GameObject:
   m_ObjectHideFlags: 0
@@ -7805,7 +7789,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 725533767}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &725533773
@@ -7931,7 +7915,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 734536499}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &734536505
@@ -7954,62 +7938,6 @@ MonoBehaviour:
   mImageTargetType: 0
   mWidth: 0.12065
   mHeight: 0.0804137
---- !u!21 &744341838
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'Coyoacan-42Material
-
-    15536'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 2fd17e1048d54dceafba502e347c1e84, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
---- !u!21 &754673612
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'Coyoacan-10Material
-
-    15366'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 3e6eb251bb1b4fa4a5ab9e783b20500e, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &773438841
 GameObject:
   m_ObjectHideFlags: 0
@@ -8376,7 +8304,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 814817649}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &814817655
@@ -8903,7 +8831,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 754673612}
+  - {fileID: 1187274817}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8945,7 +8873,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 913502184}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &913502190
@@ -9131,6 +9059,34 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!21 &946657391
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'Coyoacan-18Material
+
+    23450'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 96229877e7f441ff88dd4fdf7cb1ef0d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!43 &965422833
 Mesh:
   m_ObjectHideFlags: 0
@@ -9883,6 +9839,34 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!21 &1043628568
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'Coyoacan-30Material
+
+    23080'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 32dcb65f1ff94746a4588a33c5f2fd01, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1054756829
 GameObject:
   m_ObjectHideFlags: 0
@@ -10831,6 +10815,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!21 &1187274817
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'Coyoacan-10Material
+
+    23204'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 3e6eb251bb1b4fa4a5ab9e783b20500e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!21 &1190096386
 Material:
   serializedVersion: 6
@@ -11193,7 +11205,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1225736397}
-  m_Mesh: {fileID: 1811835753}
+  m_Mesh: {fileID: 1342815485}
 --- !u!23 &1225736400
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11211,7 +11223,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 718188372}
+  - {fileID: 1857103342}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -11253,7 +11265,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1225736397}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1225736403
@@ -11534,7 +11546,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1270572179}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1270572185
@@ -12188,6 +12200,40 @@ Material:
     m_Floats: []
     m_Colors:
     - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+--- !u!21 &1317359489
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'Coyoacan-3Material
+
+    30830'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 49ec66624a3640c3ab78887a591cc1a7, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+--- !u!4 &1320796248 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1767795147}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1336800765
 Mesh:
   m_ObjectHideFlags: 0
@@ -12341,6 +12387,197 @@ Mesh:
   m_LocalAABB:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0.5, y: 0, z: 0.33325195}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 
+--- !u!21 &1338652631
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'Coyoacan-22Material
+
+    23802'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: b05551e5f3604e5b8f072f5f1b76966d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+--- !u!43 &1342815485
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ImageTargetMesh29982
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 6
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0.4791764, y: 0, z: 0.5}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200020001000300
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 4
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 128
+    _typelessdata: 9c56f5be00000000000000bf000000000000803f0000000000000000000000009c56f5be000000000000003f000000000000803f00000000000000000000803f9c56f53e00000000000000bf000000000000803f000000000000803f000000009c56f53e000000000000003f000000000000803f000000000000803f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0.4791764, y: 0, z: 0.5}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
@@ -12605,6 +12842,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!21 &1365005228
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'Coyoacan-14Material
+
+    24124'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: a8cbf320e4c840aa835dccc5597a0549, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1368816994
 GameObject:
   m_ObjectHideFlags: 0
@@ -12666,7 +12931,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 744341838}
+  - {fileID: 723856881}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -12708,7 +12973,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1368816994}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1368817000
@@ -13152,7 +13417,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1390496489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1390496495
@@ -13236,7 +13501,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1636757523}
+  - {fileID: 946657391}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13278,7 +13543,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1403343032}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1403343038
@@ -13974,7 +14239,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 652534194}
+  - {fileID: 1553582586}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14016,7 +14281,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1435080434}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1435080440
@@ -14269,7 +14534,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1451600831}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1451600837
@@ -14292,34 +14557,12 @@ MonoBehaviour:
   mImageTargetType: 0
   mWidth: 0.12065
   mHeight: 0.0804137
---- !u!21 &1461174819
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!4 &1465937406 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1739429719}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 'Coyoacan-26Material
-
-    15238'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 64a14d945a5547fb8d8d4b5d53e1eb4f, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1466230875
 GameObject:
   m_ObjectHideFlags: 0
@@ -14677,7 +14920,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1488347592}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1488347598
@@ -14855,6 +15098,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!21 &1507045289
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'Coyoacan-46Material
+
+    23008'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: ec21d8642a3c4f78b1678b3e191a6a37, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1508424277
 GameObject:
   m_ObjectHideFlags: 0
@@ -14992,7 +15263,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1508982935}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1508982941
@@ -15118,7 +15389,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1544613855}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1544613861
@@ -15244,7 +15515,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1546139707}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1546139713
@@ -15370,7 +15641,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1551992808}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1551992814
@@ -15393,6 +15664,34 @@ MonoBehaviour:
   mImageTargetType: 0
   mWidth: 0.12065
   mHeight: 0.0804137
+--- !u!21 &1553582586
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'Coyoacan-38Material
+
+    23496'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: e554934191b14b0aad1bc4810cc39743, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1557442776
 GameObject:
   m_ObjectHideFlags: 0
@@ -15496,7 +15795,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1557442776}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1557442782
@@ -16075,7 +16374,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1577948692}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1577948698
@@ -16118,7 +16417,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1578288573
 Transform:
   m_ObjectHideFlags: 0
@@ -16130,6 +16429,7 @@ Transform:
   m_LocalPosition: {x: 0.032493442, y: -0.00169155, z: -0.011109039}
   m_LocalScale: {x: 0.12065, y: 0.12065, z: 0.12065}
   m_Children:
+  - {fileID: 2068924957}
   - {fileID: 134150249}
   m_Father: {fileID: 1071506768}
   m_RootOrder: 1
@@ -16141,7 +16441,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1578288572}
-  m_Mesh: {fileID: 1848240398}
+  m_Mesh: {fileID: 1874386392}
 --- !u!23 &1578288575
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -16159,7 +16459,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1806941585}
+  - {fileID: 1607396554}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16201,7 +16501,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1578288572}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1578288578
@@ -16327,7 +16627,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1586274124}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1586274130
@@ -16831,6 +17131,34 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!21 &1607396554
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'Coyoacan-1Material
+
+    30420'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 0a9fc0a5c9d644b7859c91d2d0063069, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1612545491
 GameObject:
   m_ObjectHideFlags: 0
@@ -16934,7 +17262,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1612545491}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1612545497
@@ -16980,34 +17308,6 @@ Material:
     m_TexEnvs:
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: d471546edc92402fa7faeed45a58bf67, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
---- !u!21 &1636757523
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'Coyoacan-18Material
-
-    15570'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 96229877e7f441ff88dd4fdf7cb1ef0d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -17116,7 +17416,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1641322594}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1641322600
@@ -17624,7 +17924,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1670413514}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1670413520
@@ -17863,7 +18163,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 195683580}
+  - {fileID: 1338652631}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -17905,7 +18205,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1697108568}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1697108574
@@ -18031,7 +18331,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1710390655}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1710390661
@@ -18074,7 +18374,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1717017210
 Transform:
   m_ObjectHideFlags: 0
@@ -18087,6 +18387,7 @@ Transform:
   m_LocalScale: {x: 0.12065, y: 0.12065, z: 0.12065}
   m_Children:
   - {fileID: 1193088020}
+  - {fileID: 1465937406}
   m_Father: {fileID: 489350822}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18157,7 +18458,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1717017209}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1717017215
@@ -18180,6 +18481,46 @@ MonoBehaviour:
   mImageTargetType: 0
   mWidth: 0.12065
   mHeight: 0.0804137
+--- !u!21 &1720759735
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'Coyoacan-5Material
+
+    30968'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 3041e9b651134283b7e77ae9a16c36f4, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+--- !u!4 &1723713122 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1890291543}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1726993337 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+    type: 3}
+  m_PrefabInstance: {fileID: 62467013}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1732789848
 GameObject:
   m_ObjectHideFlags: 0
@@ -18434,6 +18775,125 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1001 &1739429719
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1717017210}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Name
+      value: Frida (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6190557875d0549a8899cdb08fcec546, type: 2}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.14800005
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.10600003
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.154
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.09584991
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.095849715
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.095849715
+      objectReference: {fileID: 0}
+    - target: {fileID: -2039348181509844026, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b434c2960758c834488645fc3b2323b5, type: 2}
+    - target: {fileID: -1316743014691780232, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cda18d8da8966c04599f8f1fbe83a823, type: 2}
+    - target: {fileID: -1149613533337950434, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b143e22480cf7324894254d9c6ce1e0e, type: 2}
+    - target: {fileID: 596722786947938931, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3c4b993dcae23eb4ca3334a93eae6b1d, type: 2}
+    - target: {fileID: 1651062367082650294, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cda18d8da8966c04599f8f1fbe83a823, type: 2}
+    - target: {fileID: 4054321849461254258, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a6a10bbefce0a1648ad1b25d11e0d300, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 20e4837d77bf74a189de12a3c3abcbd5, type: 3}
 --- !u!1 &1743423424
 GameObject:
   m_ObjectHideFlags: 0
@@ -18537,7 +18997,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1743423424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1743423430
@@ -18560,34 +19020,125 @@ MonoBehaviour:
   mImageTargetType: 0
   mWidth: 0.12065
   mHeight: 0.0804137
---- !u!21 &1758603032
-Material:
-  serializedVersion: 6
+--- !u!1001 &1767795147
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'Coyoacan-14Material
-
-    16156'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: a8cbf320e4c840aa835dccc5597a0549, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 2107212418}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Name
+      value: Frida (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6190557875d0549a8899cdb08fcec546, type: 2}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.14800003
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.10600001
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.154
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.09584972
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.09584961
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.09584961
+      objectReference: {fileID: 0}
+    - target: {fileID: -2039348181509844026, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b434c2960758c834488645fc3b2323b5, type: 2}
+    - target: {fileID: -1316743014691780232, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cda18d8da8966c04599f8f1fbe83a823, type: 2}
+    - target: {fileID: -1149613533337950434, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b143e22480cf7324894254d9c6ce1e0e, type: 2}
+    - target: {fileID: 596722786947938931, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3c4b993dcae23eb4ca3334a93eae6b1d, type: 2}
+    - target: {fileID: 1651062367082650294, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cda18d8da8966c04599f8f1fbe83a823, type: 2}
+    - target: {fileID: 4054321849461254258, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a6a10bbefce0a1648ad1b25d11e0d300, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 20e4837d77bf74a189de12a3c3abcbd5, type: 3}
 --- !u!1 &1768961307
 GameObject:
   m_ObjectHideFlags: 0
@@ -18896,225 +19447,6 @@ Mesh:
   m_LocalAABB:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0.5, y: 0, z: 0.33325195}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    offset: 0
-    size: 0
-    path: 
---- !u!21 &1801881629
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'Coyoacan-46Material
-
-    15206'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: ec21d8642a3c4f78b1678b3e191a6a37, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
---- !u!21 &1806941585
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 'Coyoacan-1Material
-
-    15796'
-  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 5
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 0a9fc0a5c9d644b7859c91d2d0063069, type: 3}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats: []
-    m_Colors:
-    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
---- !u!43 &1811835753
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: ImageTargetMesh15440
-  serializedVersion: 10
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 6
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 4
-    localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.4791764, y: 0, z: 0.5}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000001000200020001000300
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 4
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 128
-    _typelessdata: 9c56f5be00000000000000bf000000000000803f0000000000000000000000009c56f5be000000000000003f000000000000803f00000000000000000000803f9c56f53e00000000000000bf000000000000803f000000000000803f000000009c56f53e000000000000003f000000000000803f000000000000803f0000803f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0.4791764, y: 0, z: 0.5}
   m_MeshUsageFlags: 0
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
@@ -19455,7 +19787,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1819534308}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1819534314
@@ -19708,7 +20040,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1831557853}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1831557859
@@ -19751,7 +20083,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1843620845
 Transform:
   m_ObjectHideFlags: 0
@@ -19764,6 +20096,7 @@ Transform:
   m_LocalScale: {x: 0.12065, y: 0.12065, z: 0.12065}
   m_Children:
   - {fileID: 1090874484}
+  - {fileID: 1723713122}
   m_Father: {fileID: 489350822}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -19834,7 +20167,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1843620844}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1843620850
@@ -19857,169 +20190,6 @@ MonoBehaviour:
   mImageTargetType: 0
   mWidth: 0.12065
   mHeight: 0.0804137
---- !u!43 &1848240398
-Mesh:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: ImageTargetMesh15784
-  serializedVersion: 10
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 6
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 4
-    localAABB:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.5, y: 0, z: 0.33325195}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_BonesAABB: []
-  m_VariableBoneCountWeights:
-    m_Data: 
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000001000200020001000300
-  m_VertexData:
-    serializedVersion: 3
-    m_VertexCount: 4
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 24
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 128
-    _typelessdata: 000000bf0000000000a0aabe000000000000803f000000000000000000000000000000bf0000000000a0aa3e000000000000803f00000000000000000000803f0000003f0000000000a0aabe000000000000803f000000000000803f000000000000003f0000000000a0aa3e000000000000803f000000000000803f0000803f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0, z: 0}
-    m_Extent: {x: 0.5, y: 0, z: 0.33325195}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshMetrics[0]: 1
-  m_MeshMetrics[1]: 1
-  m_MeshOptimizationFlags: 1
-  m_StreamData:
-    offset: 0
-    size: 0
-    path: 
 --- !u!21 &1852998867
 Material:
   serializedVersion: 6
@@ -20203,6 +20373,34 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!21 &1857103342
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'RAPortadaMaterial
+
+    29994'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 00a89d8216c04517adc7b6241458de55, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &1872845115
 GameObject:
   m_ObjectHideFlags: 0
@@ -20330,6 +20528,169 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!43 &1874386392
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ImageTargetMesh30408
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 6
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 4
+    localAABB:
+      m_Center: {x: 0, y: 0, z: 0}
+      m_Extent: {x: 0.5, y: 0, z: 0.33325195}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000001000200020001000300
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 4
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 24
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 128
+    _typelessdata: 000000bf0000000000a0aabe000000000000803f000000000000000000000000000000bf0000000000a0aa3e000000000000803f00000000000000000000803f0000003f0000000000a0aabe000000000000803f000000000000803f000000000000003f0000000000a0aa3e000000000000803f000000000000803f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0.5, y: 0, z: 0.33325195}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 
 --- !u!1 &1890046673
 GameObject:
   m_ObjectHideFlags: 0
@@ -20364,6 +20725,125 @@ Transform:
   m_Father: {fileID: 1071506768}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1890291543
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1843620845}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Name
+      value: Frida (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6190557875d0549a8899cdb08fcec546, type: 2}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.14800005
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.10600002
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.154
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.09584981
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.09584966
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.09584966
+      objectReference: {fileID: 0}
+    - target: {fileID: -2039348181509844026, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b434c2960758c834488645fc3b2323b5, type: 2}
+    - target: {fileID: -1316743014691780232, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cda18d8da8966c04599f8f1fbe83a823, type: 2}
+    - target: {fileID: -1149613533337950434, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b143e22480cf7324894254d9c6ce1e0e, type: 2}
+    - target: {fileID: 596722786947938931, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3c4b993dcae23eb4ca3334a93eae6b1d, type: 2}
+    - target: {fileID: 1651062367082650294, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cda18d8da8966c04599f8f1fbe83a823, type: 2}
+    - target: {fileID: 4054321849461254258, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a6a10bbefce0a1648ad1b25d11e0d300, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 20e4837d77bf74a189de12a3c3abcbd5, type: 3}
 --- !u!1 &1891949579
 GameObject:
   m_ObjectHideFlags: 0
@@ -20467,7 +20947,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1891949579}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1891949585
@@ -20848,7 +21328,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1939469169}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1939469175
@@ -21194,6 +21674,7 @@ Transform:
   m_LocalScale: {x: 0.12065, y: 0.12065, z: 0.12065}
   m_Children:
   - {fileID: 306945527}
+  - {fileID: 1726993337}
   m_Father: {fileID: 489350822}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21222,7 +21703,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 431079831}
+  - {fileID: 1317359489}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21264,7 +21745,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1972723037}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1972723043
@@ -21511,7 +21992,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 420434374}
+  - {fileID: 267518645}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21553,7 +22034,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2000326394}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2000326400
@@ -21679,7 +22160,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2002110107}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2002110113
@@ -21763,7 +22244,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 1758603032}
+  - {fileID: 1365005228}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -21805,7 +22286,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2004772756}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2004772762
@@ -22264,6 +22745,159 @@ Transform:
   m_Father: {fileID: 1071506768}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &2068924956
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1578288573}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Name
+      value: 'Frida '
+      objectReference: {fileID: 0}
+    - target: {fileID: -6057140222963153312, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 6190557875d0549a8899cdb08fcec546, type: 2}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.148
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.106
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.154
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.09584954
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.09584952
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.09584952
+      objectReference: {fileID: 0}
+    - target: {fileID: -2039348181509844026, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b434c2960758c834488645fc3b2323b5, type: 2}
+    - target: {fileID: -1316743014691780232, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cda18d8da8966c04599f8f1fbe83a823, type: 2}
+    - target: {fileID: -1149613533337950434, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b143e22480cf7324894254d9c6ce1e0e, type: 2}
+    - target: {fileID: 596722786947938931, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3c4b993dcae23eb4ca3334a93eae6b1d, type: 2}
+    - target: {fileID: 1651062367082650294, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: cda18d8da8966c04599f8f1fbe83a823, type: 2}
+    - target: {fileID: 4054321849461254258, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a6a10bbefce0a1648ad1b25d11e0d300, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 20e4837d77bf74a189de12a3c3abcbd5, type: 3}
+--- !u!4 &2068924957 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 20e4837d77bf74a189de12a3c3abcbd5,
+    type: 3}
+  m_PrefabInstance: {fileID: 2068924956}
+  m_PrefabAsset: {fileID: 0}
+--- !u!21 &2070517579
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 'Coyoacan-26Material
+
+    23054'
+  m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 64a14d945a5547fb8d8d4b5d53e1eb4f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats: []
+    m_Colors:
+    - _Color: {r: 0.82089555, g: 0.82089555, b: 0.82089555, a: 1}
 --- !u!1 &2072122646
 GameObject:
   m_ObjectHideFlags: 0
@@ -22325,7 +22959,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 689443756}
+  - {fileID: 672850079}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22367,7 +23001,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2072122646}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2072122652
@@ -22494,7 +23128,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2107212418
 Transform:
   m_ObjectHideFlags: 0
@@ -22507,6 +23141,7 @@ Transform:
   m_LocalScale: {x: 0.12065, y: 0.12065, z: 0.12065}
   m_Children:
   - {fileID: 1939466184}
+  - {fileID: 1320796248}
   m_Father: {fileID: 489350822}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -22535,7 +23170,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 161664457}
+  - {fileID: 1720759735}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -22577,7 +23212,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2107212417}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2107212423
@@ -22866,7 +23501,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2131531000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Script: {fileID: 11500000, guid: 288faa34d88804547b3115dc553aed07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2131531006
