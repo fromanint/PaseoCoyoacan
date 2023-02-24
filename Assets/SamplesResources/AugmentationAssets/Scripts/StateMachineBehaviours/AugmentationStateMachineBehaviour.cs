@@ -1,5 +1,5 @@
-﻿/*========================================================================
-Copyright (c) 2017 PTC Inc. All Rights Reserved.
+/*========================================================================
+Copyright (c) 2021 PTC Inc. All Rights Reserved.
  
 Confidential and Proprietary - Protected under copyright and other laws.
 Vuforia is a trademark of PTC Inc., registered in the United States and other
@@ -8,64 +8,44 @@ countries.
 
 using System;
 using System.Collections.Generic;
-using System.Reflection;
 using UnityEngine;
 using UnityEngine.Events;
 
 public abstract class AugmentationStateMachineBehaviour : StateMachineBehaviour
 {
+    public string OnEnterMethodName;
+    public string OnUpdateMethodName;
+    public string OnExitMethodName;
+    readonly Dictionary<Type, Dictionary<string, Delegate>> cachedDelegates = new Dictionary<Type, Dictionary<string, Delegate>>();
 
-    #region PUBLIC_MEMBER_VARIABLES
-    public string m_OnEnterMethodName;
-    public string m_OnUpdateMethodName;
-    public string m_OnExitMethodName;
-    #endregion // PUBLIC_MEMBER_VARIABLES
-
-    #region PRIVATE_STATIC_VARIABLES
-    static Dictionary<Type, Dictionary<string, Delegate>> cachedDelegates = new Dictionary<Type, Dictionary<string, Delegate>>();
-    #endregion // PRIVATE_STATIC_VARIABLES
-
-    #region UNITY_STATEMACHINEBEHAVIOUR_METHODS
     public override void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         base.OnStateEnter(animator, stateInfo, layerIndex);
 
-        if (!String.IsNullOrEmpty(m_OnEnterMethodName))
-        {
-            DoStateEvent(animator, m_OnEnterMethodName);
-        }
+        if (!string.IsNullOrEmpty(OnEnterMethodName))
+            DoStateEvent(animator, OnEnterMethodName);
     }
 
     public override void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         base.OnStateExit(animator, stateInfo, layerIndex);
 
-        if (!String.IsNullOrEmpty(m_OnExitMethodName))
-        {
-            DoStateEvent(animator, m_OnExitMethodName);
-        }
+        if (!string.IsNullOrEmpty(OnExitMethodName))
+            DoStateEvent(animator, OnExitMethodName);
     }
 
     public override void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         base.OnStateUpdate(animator, stateInfo, layerIndex);
 
-        if (!String.IsNullOrEmpty(m_OnUpdateMethodName))
-        {
-            DoStateEvent(animator, m_OnUpdateMethodName);
-        }
+        if (!string.IsNullOrEmpty(OnUpdateMethodName))
+            DoStateEvent(animator, OnUpdateMethodName);
     }
-    #endregion // UNITY_STATEMACHINEBEHAVIOUR_METHODS
-
-
-    #region PUBLIC_METHODS
+    
     public abstract void DoStateEvent(Animator animator, string methodName);
 
     public abstract Type GetTargetType();
-    #endregion // PUBLIC_METHODS
-
-
-    #region PRIVATE_METHODS
+    
     /// <summary>
     /// Gets a delegate for the method of type T named methodName. Creates it if it does not already exist in the cache.
     /// </summary>
@@ -79,19 +59,15 @@ public abstract class AugmentationStateMachineBehaviour : StateMachineBehaviour
         {
             Delegate del;
             if (delegateByMethodName.TryGetValue(methodName, out del))
-            {
                 result = del as Action<T>;
-            }
         }
 
 
         if (result == null)
         {
-            MethodInfo methodInfo = UnityEventBase.GetValidMethodInfo(augmentation, methodName, new Type[0]);
+            var methodInfo = UnityEventBase.GetValidMethodInfo(augmentation, methodName, new Type[0]);
             if (methodInfo == null)
-            {
-                UnityEngine.Debug.LogWarning("Method \"" + methodName + "\" could not be found on object of type " + typeof(T).Name);
-            }
+                Debug.LogWarning("Method \"" + methodName + "\" could not be found on object of type " + typeof(T).Name);
             else
             {
 #if NETFX_CORE
@@ -102,22 +78,16 @@ public abstract class AugmentationStateMachineBehaviour : StateMachineBehaviour
                 if (del == null)
                 {
                     if (methodInfo.ReturnType != typeof(void))
-                    {
-                        UnityEngine.Debug.LogWarning("Method \"" + methodName + "\" must have a return type of void to be used with AugmentationStateMachineBehaviour");
-                    }
-
+                        Debug.LogWarning("Method \"" + methodName + "\" must have a return type of void to be used with AugmentationStateMachineBehaviour");
+                    
                     if (methodInfo.GetGenericArguments().Length > 0)
-                    {
-                        UnityEngine.Debug.LogWarning("Method \"" + methodName + "\" must have no arguments to be used with AugmentationStateMachineBehaviour");
-                    }
+                        Debug.LogWarning("Method \"" + methodName + "\" must have no arguments to be used with AugmentationStateMachineBehaviour");
                 }
                 else
                 {
                     result = del as Action<T>;
                     if (result != null)
-                    {
-                        AddDelegateToCache<T>(result, methodName);
-                    }
+                        AddDelegateToCache(result, methodName);
                 }
             }
 
@@ -140,6 +110,5 @@ public abstract class AugmentationStateMachineBehaviour : StateMachineBehaviour
 
         delegateByMethodName.Add(methodName, delegateToAdd);
     }
-    #endregion // PRIVATE_METHODS
 }
 

@@ -1,5 +1,5 @@
 /*===============================================================================
-Copyright (c) 2016-2017 PTC Inc. All Rights Reserved.
+Copyright (c) 2021 PTC Inc. All Rights Reserved.
 
 Confidential and Proprietary - Protected under copyright and other laws.
 Vuforia is a trademark of PTC Inc., registered in the United States and other 
@@ -10,35 +10,37 @@ using UnityEngine.UI;
 
 public class PanelShowHide : MonoBehaviour
 {
-    public Animator m_Animator;
-    public Image m_Image;
-    public Text m_Info;
+    public Animator PanelAnimator;
+    public Image PanelImage;
+    public Text PanelInfo;
+
+    const string ANIMATION_HIDE_PANEL = "HidePanel";
+    const string ANIMATION_SHOW_PANEL = "ShowPanel";
+    const string ANIMATION_SHOW_ANIM_NAME = "ShowAnim";
 
     public void Hide()
     {
-        m_Animator.SetTrigger("HidePanel");
+        PanelAnimator.SetTrigger(ANIMATION_HIDE_PANEL);
     }
 
     public void Show(string vuMarkId, string vuMarkDataType, string vuMarkDesc, Sprite vuMarkImage)
     {
-        m_Animator.ResetTrigger("HidePanel");
+        PanelAnimator.ResetTrigger(ANIMATION_HIDE_PANEL);
 
-        m_Info.text =
+        PanelInfo.text =
             "<color=yellow>VuMark Instance Id: </color>" +
             "\n" + vuMarkId + " - " + vuMarkDesc +
             "\n\n<color=yellow>VuMark Type: </color>" +
             "\n" + vuMarkDataType;
 
-        m_Image.sprite = vuMarkImage;
+        PanelImage.sprite = vuMarkImage;
 
-        if (!m_Animator.GetCurrentAnimatorStateInfo(0).IsName("ShowAnim"))
-        {
-            m_Animator.SetTrigger("ShowPanel");
-        }
+        if (!PanelAnimator.GetCurrentAnimatorStateInfo(0).IsName(ANIMATION_SHOW_ANIM_NAME))
+            PanelAnimator.SetTrigger(ANIMATION_SHOW_PANEL);
     }
 
     public void ResetShowTrigger()
     {
-        m_Animator.ResetTrigger("ShowPanel");
+        PanelAnimator.ResetTrigger(ANIMATION_SHOW_PANEL);
     }
 }

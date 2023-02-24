@@ -1,5 +1,5 @@
-﻿/*========================================================================
-Copyright (c) 2017 PTC Inc. All Rights Reserved.
+/*========================================================================
+Copyright (c) 2021 PTC Inc. All Rights Reserved.
  
 Confidential and Proprietary - Protected under copyright and other laws.
 Vuforia is a trademark of PTC Inc., registered in the United States and other
@@ -8,12 +8,32 @@ countries.
 
 public class Drone : Augmentation
 {
-    #region PUBLIC_METHODS
+    const string ANIMATION_IS_FACING_OBJECT = "IsFacingObject";
+    const string ANIMATION_IS_SCANNING = "IsScanning";
+    const string ANIMATION_IS_SHOWING_LASER = "IsShowingLaser";
+    
+    bool IsFacingObject
+    {
+        get => mAnimator.GetBool(ANIMATION_IS_FACING_OBJECT);
+        set => mAnimator.SetBool(ANIMATION_IS_FACING_OBJECT, value);
+    }
 
+    bool IsScanning
+    {
+        get => mAnimator.GetBool(ANIMATION_IS_SCANNING);
+        set => mAnimator.SetBool(ANIMATION_IS_SCANNING, value);
+    }
+
+    bool IsShowingLaser
+    {
+        get => mAnimator.GetBool(ANIMATION_IS_SHOWING_LASER);
+        set => mAnimator.SetBool(ANIMATION_IS_SHOWING_LASER, value);
+    }
+    
     public override void OnEnter()
     {
         base.OnEnter();
-        m_EvtOnEnter.Invoke();
+        OnEnterEvent.Invoke();
     }
 
     public override void OnExit()
@@ -24,50 +44,22 @@ public class Drone : Augmentation
         IsShowingLaser = false;
     }
 
-    public void AnimEvt_StopScanning()
+    public void SetAnimationScanning(bool value)
     {
-        IsScanning = false;
-        IsShowingLaser = false;
+        IsScanning = value;
+        IsShowingLaser = value;
+        if(value)
+            IsFacingObject = true;
     }
-
-    public void AnimEvt_StartScanning()
-    {
-        IsShowingLaser = true;
-        IsScanning = true;
-        IsFacingObject = true;
-    }
-
+    
     public void HandleVirtualButtonPressed()
     {
-        AnimEvt_StartScanning();
+        SetAnimationScanning(true);
     }
 
     public void HandleVirtualButtonReleased()
     {
-        AnimEvt_StopScanning();
+        SetAnimationScanning(false);
     }
-    #endregion // PUBLIC_METHODS
-
-
-    #region PRIVATE_METHODS
-    private bool IsFacingObject
-    {
-        get { return animator.GetBool("IsFacingObject"); }
-        set { animator.SetBool("IsFacingObject", value); }
-    }
-
-    private bool IsScanning
-    {
-        get { return animator.GetBool("IsScanning"); }
-        set { animator.SetBool("IsScanning", value); }
-    }
-
-    private bool IsShowingLaser
-    {
-        get { return animator.GetBool("IsShowingLaser"); }
-        set { animator.SetBool("IsShowingLaser", value); }
-    }
-
-    #endregion // PRIVATE_METHODS
 }
 

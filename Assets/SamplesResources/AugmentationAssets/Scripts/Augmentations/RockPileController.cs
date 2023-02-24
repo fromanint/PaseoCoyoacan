@@ -1,5 +1,5 @@
-﻿/*========================================================================
-Copyright (c) 2017 PTC Inc. All Rights Reserved.
+/*========================================================================
+Copyright (c) 2021 PTC Inc. All Rights Reserved.
  
 Confidential and Proprietary - Protected under copyright and other laws.
 Vuforia is a trademark of PTC Inc., registered in the United States and other
@@ -10,49 +10,34 @@ using UnityEngine;
 
 public class RockPileController : MonoBehaviour
 {
-    #region PUBLIC_MEMBER_VARIABLES
-    public Transform m_GrabbableRock;
-    #endregion // PUBLIC_MEMBER_VARIABLES
-
-    #region PRIVATE_MEMBER_VARIABLES
-    private FadeObject fadeController;
-    #endregion // PRIVATE_MEMBER_VARIABLES
-
-    #region UNITY_MONOBEHAVIOUR_METHODS
-
+    public Transform GrabbableRock;
+    FadeObject mFadeController;
+    
     void Awake()
     {
-        fadeController = GetComponent<FadeObject>();
+        mFadeController = GetComponent<FadeObject>();
     }
-    #endregion // UNITY_MONOBEHAVIOUR_METHODS
-
-
-    #region PUBLIC_METHODS
+    
     public void FadeOut()
     {
-        fadeController.m_IsVisible = false;
+        mFadeController.IsVisible = false;
 
-        if (m_GrabbableRock != null)
+        if (GrabbableRock != null)
         {
-            var rockFader = m_GrabbableRock.GetComponent<FadeObject>();
-            rockFader.m_IsVisible = false;
+            var rockFader = GrabbableRock.GetComponent<FadeObject>();
+            rockFader.IsVisible = false;
         }
     }
 
     public void FadeIn()
     {
-        fadeController.m_IsVisible = true;
+        mFadeController.IsVisible = true;
 
-        if (m_GrabbableRock != null)
+        if (GrabbableRock != null)
         {
-            var rockFader = m_GrabbableRock.GetComponent<FadeObject>();
-            rockFader.m_IsVisible = true;
+            var rockFader = GrabbableRock.GetComponent<FadeObject>();
+            rockFader.IsVisible = true;
         }
     }
-    #endregion // PUBLIC_METHODS
-
-
-    #region PRIVATE_METHODS
-    #endregion // PRIVATE_METHODS
 }
 

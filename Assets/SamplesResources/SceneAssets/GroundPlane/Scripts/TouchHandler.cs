@@ -1,130 +1,109 @@
-﻿/*============================================================================== 
-Copyright (c) 2018 PTC Inc. All Rights Reserved.
+/*==============================================================================
+Copyright (c) 2021 PTC Inc. All Rights Reserved.
 
-Vuforia is a trademark of PTC Inc., registered in the United States and other 
-countries.   
+Vuforia is a trademark of PTC Inc., registered in the United States and other
+countries.
 ==============================================================================*/
 
 using UnityEngine;
 
 public class TouchHandler : MonoBehaviour
 {
-    #region PUBLIC_MEMBERS
+    public Transform AugmentationObject;
+    public bool EnablePinchScaling;
 
-    public Transform augmentationObject;
+    public static bool sIsSingleFingerStationary => IsSingleFingerDown() && Input.GetTouch(0).phase == TouchPhase.Stationary;
+    public static bool sIsSingleFingerDragging => IsSingleFingerDown() && Input.GetTouch(0).phase == TouchPhase.Moved;
+    static int sLastTouchCount;
 
-    [HideInInspector]
-    public bool enableRotation;
-    public bool enablePinchScaling;
+    const float SCALE_RANGE_MIN = 0.1f;
+    const float SCALE_RANGE_MAX = 2.0f;
 
-    public static bool DoubleTap
+    Touch[] mTouches;
+    bool mEnableRotation;
+    bool mIsFirstFrameWithTwoTouches;
+    float mCachedTouchAngle;
+    float mCachedTouchDistance;
+    float mCachedAugmentationScale;
+    Vector3 mCachedAugmentationRotation;
+
+    /// <summary>
+    /// Enables rotation input.
+    /// It is registered to ContentPositioningBehaviour.OnContentPlaced.
+    /// </summary>
+    public void EnableRotation()
     {
-        get { return (Input.touchSupported) && Input.touches[0].tapCount == 2; }
+        mEnableRotation = true;
     }
 
-    public static bool IsSingleFingerStationary
+    /// <summary>
+    /// Disables rotation input.
+    /// It is registered to UI Reset Button and also DevicePoseBehaviourManager.DevicePoseReset event.
+    /// </summary>
+    public void DisableRotation()
     {
-        get { return IsSingleFingerDown() && (Input.touches[0].phase == TouchPhase.Stationary); }
+        mEnableRotation = false;
     }
-
-    public static bool IsSingleFingerDragging
-    {
-        get { return IsSingleFingerDown() && (Input.touches[0].phase == TouchPhase.Moved); }
-    }
-
-    #endregion // PUBLIC MEMBERS
-
-
-    #region PRIVATE_MEMBERS
-    const float ScaleRangeMin = 0.1f;
-    const float ScaleRangeMax = 2.0f;
-
-    Touch[] touches;
-    static int lastTouchCount;
-    bool isFirstFrameWithTwoTouches;
-    float cachedTouchAngle;
-    float cachedTouchDistance;
-    float cachedAugmentationScale;
-    Vector3 cachedAugmentationRotation;
-    #endregion // PRIVATE_MEMBERS
-
-
-    #region MONOBEHAVIOUR_METHODS
 
     void Start()
     {
-        this.cachedAugmentationScale = this.augmentationObject.localScale.x;
-        this.cachedAugmentationRotation = this.augmentationObject.localEulerAngles;
+        mCachedAugmentationScale = AugmentationObject.localScale.x;
+        mCachedAugmentationRotation = AugmentationObject.localEulerAngles;
     }
 
     void Update()
     {
-        this.touches = Input.touches;
-
         if (Input.touchCount == 2)
         {
-            float currentTouchDistance = Vector2.Distance(this.touches[0].position, this.touches[1].position);
-            float diff_y = this.touches[0].position.y - this.touches[1].position.y;
-            float diff_x = this.touches[0].position.x - this.touches[1].position.x;
-            float currentTouchAngle = Mathf.Atan2(diff_y, diff_x) * Mathf.Rad2Deg;
+            GetTouchAngleAndDistance(Input.GetTouch(0), Input.GetTouch(1),
+                out var currentTouchAngle, out var currentTouchDistance);
 
-            if (this.isFirstFrameWithTwoTouches)
+            if (mIsFirstFrameWithTwoTouches)
             {
-                this.cachedTouchDistance = currentTouchDistance;
-                this.cachedTouchAngle = currentTouchAngle;
-                this.isFirstFrameWithTwoTouches = false;
+                mCachedTouchDistance = currentTouchDistance;
+                mCachedTouchAngle = currentTouchAngle;
+                mIsFirstFrameWithTwoTouches = false;
             }
 
-            float angleDelta = currentTouchAngle - this.cachedTouchAngle;
-            float scaleMultiplier = (currentTouchDistance / this.cachedTouchDistance);
-            float scaleAmount = this.cachedAugmentationScale * scaleMultiplier;
-            float scaleAmountClamped = Mathf.Clamp(scaleAmount, ScaleRangeMin, ScaleRangeMax);
+            var angleDelta = currentTouchAngle - mCachedTouchAngle;
+            var scaleMultiplier = currentTouchDistance / mCachedTouchDistance;
+            var scaleAmount = mCachedAugmentationScale * scaleMultiplier;
+            var scaleAmountClamped = Mathf.Clamp(scaleAmount, SCALE_RANGE_MIN, SCALE_RANGE_MAX);
 
-            if (this.enableRotation)
-            {
-                this.augmentationObject.localEulerAngles = this.cachedAugmentationRotation - new Vector3(0, angleDelta * 3f, 0);
-            }
-            if (this.enableRotation && this.enablePinchScaling)
-            {
-                // Optional Pinch Scaling can be enabled via Inspector for this Script Component
-                this.augmentationObject.localScale = new Vector3(scaleAmountClamped, scaleAmountClamped, scaleAmountClamped);
-            }
-
+            if (mEnableRotation)
+                AugmentationObject.localEulerAngles = mCachedAugmentationRotation - new Vector3(0, angleDelta * 3f, 0);
+            
+            // Optional Pinch Scaling can be enabled via Inspector for this Script Component
+            if (mEnableRotation && EnablePinchScaling)
+                AugmentationObject.localScale = new Vector3(scaleAmountClamped, scaleAmountClamped, scaleAmountClamped);
         }
         else if (Input.touchCount < 2)
         {
-            this.cachedAugmentationScale = this.augmentationObject.localScale.x;
-            this.cachedAugmentationRotation = this.augmentationObject.localEulerAngles;
-            this.isFirstFrameWithTwoTouches = true;
+            mCachedAugmentationScale = AugmentationObject.localScale.x;
+            mCachedAugmentationRotation = AugmentationObject.localEulerAngles;
+            mIsFirstFrameWithTwoTouches = true;
         }
+        // enable runtime testing of pinch scaling
         else if (Input.touchCount == 6)
-        {
-            // enable runtime testing of pinch scaling
-            this.enablePinchScaling = true;
-        }
+            EnablePinchScaling = true;
+        // disable runtime testing of pinch scaling
         else if (Input.touchCount == 5)
-        {
-            // disable runtime testing of pinch scaling
-            this.enablePinchScaling = false;
-        }
+            EnablePinchScaling = false;
     }
 
-    #endregion // MONOBEHAVIOUR_METHODS
-
-
-    #region PRIVATE_METHODS
+    void GetTouchAngleAndDistance(Touch firstTouch, Touch secondTouch, out float touchAngle, out float touchDistance)
+    {
+        touchDistance = Vector2.Distance(firstTouch.position, secondTouch.position);
+        var diffY = firstTouch.position.y - secondTouch.position.y;
+        var diffX = firstTouch.position.x - secondTouch.position.x;
+        touchAngle = Mathf.Atan2(diffY, diffX) * Mathf.Rad2Deg;
+    }
 
     static bool IsSingleFingerDown()
     {
         if (Input.touchCount == 0 || Input.touchCount >= 2)
-            lastTouchCount = Input.touchCount;
+            sLastTouchCount = Input.touchCount;
 
-        return (
-            Input.touchCount == 1 &&
-            Input.touches[0].fingerId == 0 &&
-            lastTouchCount == 0);
+        return Input.touchCount == 1 && Input.GetTouch(0).fingerId == 0 && sLastTouchCount == 0;
     }
-
-    #endregion // PRIVATE_METHODS
-
 }

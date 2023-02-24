@@ -1,5 +1,5 @@
-﻿/*===============================================================================
-Copyright (c) 2018 PTC Inc. All Rights Reserved.
+/*===============================================================================
+Copyright (c) 2021 PTC Inc. All Rights Reserved.
 
 Vuforia is a trademark of PTC Inc., registered in the United States and other
 countries.
@@ -8,14 +8,14 @@ using UnityEngine;
 
 public class LookAtObject : MonoBehaviour
 {
-    public Transform lookAtObject;
+    public Transform LookAtTargetTransform;
 
     void Update()
     {
-        if (lookAtObject)
+        if (LookAtTargetTransform != null)
         {
-            Vector3 directionToTarget = this.lookAtObject.position - this.transform.position;
-            this.transform.rotation = Quaternion.LookRotation(-directionToTarget, this.lookAtObject.up);
+            var targetDirection = transform.position - LookAtTargetTransform.position;
+            transform.forward = targetDirection;
         }
     }
 }

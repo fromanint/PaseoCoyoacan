@@ -1,27 +1,27 @@
-﻿/*========================================================================
-Copyright (c) 2017 PTC Inc. All Rights Reserved.
+/*========================================================================
+Copyright (c) 2021 PTC Inc. All Rights Reserved.
  
 Confidential and Proprietary - Protected under copyright and other laws.
 Vuforia is a trademark of PTC Inc., registered in the United States and other
 countries.
 =========================================================================*/
 
-using UnityEngine;
-
 public class OxygenTank : Augmentation
 {
-    #region PUBLIC_METHODS
-    public override void Restore()
+    const string ANIMATION_IS_DETAIL_ON = "IsDetailOn";
+    const string ANIMATION_DO_ENTER = "DoEnter";
+    
+    bool IsDetailOn
     {
-        base.Restore();
+        get => mAnimator.GetBool(ANIMATION_IS_DETAIL_ON);
+        set => mAnimator.SetBool(ANIMATION_IS_DETAIL_ON, value);
     }
-
+    
     public override void OnEnter()
     {
         base.OnEnter();
         IsDetailOn = false;
-
-        m_EvtOnEnter.Invoke();
+        OnEnterEvent.Invoke();
     }
 
     public void ShowDetail()
@@ -43,21 +43,10 @@ public class OxygenTank : Augmentation
     {
         HideDetail();
     }
-    #endregion // PUBLIC_METHODS
-
-
-    #region PRIVATE_METHODS
-
-    private void DoEnter()
+    
+    void DoEnter()
     {
-        animator.SetTrigger("DoEnter");
+        mAnimator.SetTrigger(ANIMATION_DO_ENTER);
     }
-
-    private bool IsDetailOn
-    {
-        get { return animator.GetBool("IsDetailOn"); }
-        set { animator.SetBool("IsDetailOn", value); }
-    }
-    #endregion // PRIVATE_METHODS
 }
 

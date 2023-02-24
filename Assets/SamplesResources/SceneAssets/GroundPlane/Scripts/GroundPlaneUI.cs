@@ -1,10 +1,10 @@
-﻿/*==============================================================================
-Copyright (c) 2019 PTC Inc. All Rights Reserved.
+/*==============================================================================
+Copyright (c) 2021 PTC Inc. All Rights Reserved.
 
 Vuforia is a trademark of PTC Inc., registered in the United States and other
 countries.
 ==============================================================================*/
-using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
@@ -12,239 +12,95 @@ using Vuforia;
 
 public class GroundPlaneUI : MonoBehaviour
 {
-    #region PRIVATE_MEMBERS
     [Header("UI Elements")]
-    [SerializeField] Text title = null;
-    [SerializeField] Text instructions = null;
-    [SerializeField] CanvasGroup screenReticle = null;
+    [SerializeField] Text Instructions = null;
+    [SerializeField] CanvasGroup ScreenReticle = null;
 
-    [Header("UI Buttons")]
-    [SerializeField] Toggle placementToggle = null;
-    [SerializeField] Toggle groundToggle = null;
-    [SerializeField] Toggle midAirToggle = null;
+    const string CHAIR_PLACEMENT_HINT = "Tap to place Chair";
+    const string CHAIR_CONTROLS_WITH_PINCH = "• Touch and drag to move Chair\n• Two fingers to rotate or pinch to scale";
+    const string CHAIR_CONTROLS_WITHOUT_PINCH = "• Touch and drag to move Chair\n• Two fingers to rotate";
+    const string POINT_DEVICE_TO_GROUND_HINT = "Point device towards ground";
+    const string MOVE_TO_ANOTHER_PLACE_HINT = "Move to get better tracking for placing an anchor";
 
-    bool resetDefaultToggle = true;
-    const string TitleProductPlacement = "Product Placement";
-    const string TitleGroundPlane = "Ground Plane";
-    const string TitleMidAir = "Mid-Air";
+    PointerEventData mPointerEventData;
+    DevicePoseManager mDevicePoseManager;
+    ProductPlacement mProductPlacement;
+    TouchHandler mTouchHandler;
+    PlaneFinderBehaviour mPlaneFinder;
 
-    GraphicRaycaster graphicRayCaster;
-    PointerEventData pointerEventData;
-    EventSystem eventSystem;
+    bool mIsAnchorTracking;
 
-    ProductPlacement productPlacement;
-    TouchHandler touchHandler;
-    #endregion // PRIVATE_MEMBERS
+    /// <summary>
+    /// The Surface Indicator should only be visible if the following conditions are true:
+    /// 1. Tracking Status is Tracked or Limited (sufficient for Hit Test Anchors)
+    /// 2. Ground Plane Hit was received for this frame
+    /// 3. There's no active touches
+    /// </summary>
+    bool SurfaceIndicatorVisibilityConditionsMet => mDevicePoseManager.TargetStatus.IsTrackedOrLimited() &&
+                                                    mProductPlacement.GroundPlaneHitReceived &&
+                                                    Input.touchCount == 0;
 
-
-    #region MONOBEHAVIOUR_METHODS
     void Start()
     {
-        this.title.text = TitleProductPlacement;
-
-        this.productPlacement = FindObjectOfType<ProductPlacement>();
-        this.touchHandler = FindObjectOfType<TouchHandler>();
-        this.graphicRayCaster = FindObjectOfType<GraphicRaycaster>();
-        this.eventSystem = FindObjectOfType<EventSystem>();
-
-        DeviceTrackerARController.Instance.RegisterDevicePoseStatusChangedCallback(OnDevicePoseStatusChanged);
-    }
-
-    void Update()
-    {
-        this.midAirToggle.interactable =
-            this.groundToggle.interactable =
-                this.placementToggle.interactable =
-                    PlaneManager.TrackingStatusIsTrackedAndNormal;
-
-        if (this.resetDefaultToggle)
-        {
-            if (this.placementToggle.interactable)
-            {
-                this.placementToggle.isOn = true;
-                this.resetDefaultToggle = false;
-            }
-        }
+        mDevicePoseManager = FindObjectOfType<DevicePoseManager>();
+        mPlaneFinder = FindObjectOfType<PlaneFinderBehaviour>();
+        mProductPlacement = FindObjectOfType<ProductPlacement>();
+        mTouchHandler = FindObjectOfType<TouchHandler>();
     }
 
     void LateUpdate()
     {
-        if (PlaneManager.GroundPlaneHitReceived && PlaneManager.TrackingStatusIsTrackedAndNormal)
+        if (mProductPlacement.GroundPlaneHitReceived && mDevicePoseManager.TargetStatus.IsTrackedAndNormal())
         {
-            // We got an automatic hit test this frame
+            // We got an automatic hit test this frame, hide the onscreen reticle when we get a hit test
+            ScreenReticle.alpha = 0;
 
-            // Hide the onscreen reticle when we get a hit test
-            this.screenReticle.alpha = 0;
-
-            this.instructions.transform.parent.gameObject.SetActive(true);
-            this.instructions.enabled = true;
-
-            if (PlaneManager.CurrentPlaneMode == PlaneManager.PlaneMode.GROUND)
-            {
-                this.instructions.text = "Tap to place Astronaut";
-            }
-            else if (PlaneManager.CurrentPlaneMode == PlaneManager.PlaneMode.PLACEMENT)
-            {
-                this.instructions.text = (this.productPlacement.IsPlaced) ?
-                    "• Touch and drag to move Chair" +
-                    "\n• Two fingers to rotate" +
-                    ((this.touchHandler.enablePinchScaling) ? " or pinch to scale" : "") +
-                    "\n• Double-tap to reset Anchor location"
-                    :
-                    "Tap to place Chair";
-            }
+            if (mIsAnchorTracking)
+                Instructions.text = mTouchHandler.EnablePinchScaling ? CHAIR_CONTROLS_WITH_PINCH : CHAIR_CONTROLS_WITHOUT_PINCH;
+            else
+                Instructions.text = CHAIR_PLACEMENT_HINT;
         }
         else
         {
             // No automatic hit test, so set alpha based on which plane mode is active
-            if (!PlaneManager.GroundPlaneHitReceived)
-            {
-                this.screenReticle.alpha =
-                    (PlaneManager.CurrentPlaneMode == PlaneManager.PlaneMode.GROUND ||
-                    PlaneManager.CurrentPlaneMode == PlaneManager.PlaneMode.PLACEMENT) ? 1 : 0;
-            }
+            if (!mProductPlacement.GroundPlaneHitReceived)
+                ScreenReticle.alpha = 1;
 
-            this.instructions.transform.parent.gameObject.SetActive(true);
-            this.instructions.enabled = true;
-
-            if (PlaneManager.CurrentPlaneMode == PlaneManager.PlaneMode.GROUND ||
-                PlaneManager.CurrentPlaneMode == PlaneManager.PlaneMode.PLACEMENT)
-            {
-                this.instructions.text = PlaneManager.GroundPlaneHitReceived ?
-                    "Move to get better tracking for placing an anchor" :
-                    "Point device towards ground";
-            }
-            else if (PlaneManager.CurrentPlaneMode == PlaneManager.PlaneMode.MIDAIR)
-            {
-                this.instructions.text = PlaneManager.TrackingStatusIsTrackedAndNormal ?
-                    "Tap to place Drone" :
-                    "Need better tracking to place a Mid-Air Anchor";
-            }
+            Instructions.text = mProductPlacement.GroundPlaneHitReceived ? MOVE_TO_ANOTHER_PLACE_HINT : POINT_DEVICE_TO_GROUND_HINT;
         }
+
+        // Surface Indicator visibility conditions rely upon GroundPlaneHitReceived,
+        // so we perform this operation in LateUpdate() to ensure that it is called
+        // after GroundPlaneHitReceived has been updated in Update().
+        SetSurfaceIndicatorVisible(SurfaceIndicatorVisibilityConditionsMet);
     }
 
-    void OnDestroy()
+    // Called by Anchor_Placement's DefaultObserverEventHandler.OnTargetFound()
+    public void OnAnchorFound()
     {
-        Debug.Log("OnDestroy() called.");
-
-        DeviceTrackerARController.Instance.UnregisterDevicePoseStatusChangedCallback(OnDevicePoseStatusChanged);
+        mIsAnchorTracking = true;
     }
-    #endregion // MONOBEHAVIOUR_METHODS
 
+    // Called by Anchor_Placement's DefaultObserverEventHandler.OnTargetLost()
+    public void OnAnchorLost()
+    {
+        mIsAnchorTracking = false;
+    }
 
-    #region PUBLIC_METHODS
     /// <summary>
-    /// Resets the UI Buttons and the Initialized property.
-    /// It is called by PlaneManager.ResetScene().
+    /// This method can be used to set the Ground Plane surface indicator visibility.
+    /// This sample will display it when the Status=TRACKED and StatusInfo=Normal.
     /// </summary>
-    public void Reset()
+    /// <param name="isVisible">bool</param>
+    void SetSurfaceIndicatorVisible(bool isVisible)
     {
-        this.placementToggle.isOn = true;
-        this.resetDefaultToggle = true;
+        var renderers = mPlaneFinder.PlaneIndicator.GetComponentsInChildren<Renderer>(true);
+        var canvases = mPlaneFinder.PlaneIndicator.GetComponentsInChildren<Canvas>(true);
+
+        foreach (var canvas in canvases)
+            canvas.enabled = isVisible;
+
+        foreach (var renderer in renderers)
+            renderer.enabled = isVisible;
     }
-
-    public void UpdateTitle()
-    {
-        switch (PlaneManager.CurrentPlaneMode)
-        {
-            case PlaneManager.PlaneMode.GROUND:
-                this.title.text = TitleGroundPlane;
-                break;
-            case PlaneManager.PlaneMode.MIDAIR:
-                this.title.text = TitleMidAir;
-                break;
-            case PlaneManager.PlaneMode.PLACEMENT:
-                this.title.text = TitleProductPlacement;
-                break;
-        }
-    }
-
-    public bool IsCanvasButtonPressed()
-    {
-        pointerEventData = new PointerEventData(this.eventSystem)
-        {
-            position = Input.mousePosition
-        };
-        List<RaycastResult> results = new List<RaycastResult>();
-        this.graphicRayCaster.Raycast(pointerEventData, results);
-
-        bool resultIsButton = false;
-        foreach (RaycastResult result in results)
-        {
-            if (result.gameObject.GetComponentInParent<Toggle>() ||
-                result.gameObject.GetComponent<Button>())
-            {
-                resultIsButton = true;
-                break;
-            }
-        }
-        return resultIsButton;
-    }
-    #endregion // PUBLIC_METHODS
-
-    #region VUFORIA_CALLBACKS
-
-    void OnDevicePoseStatusChanged(TrackableBehaviour.Status status, TrackableBehaviour.StatusInfo statusInfo)
-    {
-        Debug.Log("GroundPlaneUI.OnDevicePoseStatusChanged(" + status + ", " + statusInfo + ")");
-
-        string statusMessage = "";
-
-        switch (statusInfo)
-        {
-            case TrackableBehaviour.StatusInfo.NORMAL:
-                statusMessage = "";
-                break;
-            case TrackableBehaviour.StatusInfo.UNKNOWN:
-                statusMessage = "Limited Status";
-                break;
-            case TrackableBehaviour.StatusInfo.INITIALIZING:
-                statusMessage = "Point your device to the floor and move to scan";
-                break;
-            case TrackableBehaviour.StatusInfo.EXCESSIVE_MOTION:
-                statusMessage = "Move slower";
-                break;
-            case TrackableBehaviour.StatusInfo.INSUFFICIENT_FEATURES:
-                statusMessage = "Not enough visual features in the scene";
-                break;
-            case TrackableBehaviour.StatusInfo.INSUFFICIENT_LIGHT:
-                statusMessage = "Not enough light in the scene";
-                break;
-            case TrackableBehaviour.StatusInfo.RELOCALIZING:
-                // Display a relocalization message in the UI if:
-                // * No AnchorBehaviours are being tracked
-                // * None of the active/tracked AnchorBehaviours are in TRACKED status
-
-                // Set the status message now and clear it none of conditions are met.
-                statusMessage = "Point camera to previous position to restore tracking";
-
-                StateManager stateManager = TrackerManager.Instance.GetStateManager();
-                if (stateManager != null)
-                {
-                    // Cycle through all of the active AnchorBehaviours first.
-                    foreach (TrackableBehaviour behaviour in stateManager.GetActiveTrackableBehaviours())
-                    {
-                        if (behaviour is AnchorBehaviour)
-                        {
-                            if (behaviour.CurrentStatus == TrackableBehaviour.Status.TRACKED)
-                            {
-                                // If at least one of the AnchorBehaviours has Tracked status,
-                                // then don't display the relocalization message.
-                                statusMessage = "";
-                            }
-                        }
-                    }
-                }
-                break;
-            default:
-                statusMessage = "";
-                break;
-        }
-
-        StatusMessage.Instance.Display(statusMessage);
-        // Uncomment the following line to show Status and StatusInfo values
-        //StatusMessage.Instance.Display(status.ToString() + " -- " + statusInfo.ToString());
-    }
-
-    #endregion // VUFORIA_CALLBACKS
 }

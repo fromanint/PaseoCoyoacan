@@ -1,5 +1,5 @@
-﻿/*========================================================================
-Copyright (c) 2017 PTC Inc. All Rights Reserved.
+/*========================================================================
+Copyright (c) 2021 PTC Inc. All Rights Reserved.
  
 Confidential and Proprietary - Protected under copyright and other laws.
 Vuforia is a trademark of PTC Inc., registered in the United States and other
@@ -11,7 +11,6 @@ using UnityEngine;
 
 public class AstronautStateMachineBehaviour : AugmentationStateMachineBehaviour
 {
-    #region PUBLIC_METHODS
     public override void DoStateEvent(Animator animator, string methodName)
     {
         var augmentation = animator.GetComponent<Astronaut>();
@@ -23,6 +22,5 @@ public class AstronautStateMachineBehaviour : AugmentationStateMachineBehaviour
     {
         return typeof(Astronaut);
     }
-    #endregion // PUBLIC_METHODS
 }
 

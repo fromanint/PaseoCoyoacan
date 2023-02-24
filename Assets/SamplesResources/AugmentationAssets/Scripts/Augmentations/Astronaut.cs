@@ -1,5 +1,5 @@
-﻿/*========================================================================
-Copyright (c) 2017 PTC Inc. All Rights Reserved.
+/*========================================================================
+Copyright (c) 2021 PTC Inc. All Rights Reserved.
  
 Confidential and Proprietary - Protected under copyright and other laws.
 Vuforia is a trademark of PTC Inc., registered in the United States and other
@@ -10,24 +10,36 @@ using UnityEngine;
 
 public class Astronaut : Augmentation
 {
-    #region PUBLIC_MEMBER_VARIABLES
-    public DrillController m_Drill;
-    public ParticleSystem m_DrillEffectSmoke;
-    public ParticleSystem m_DrillEffectRocks;
-    public RockPileController m_RockPile;
-    #endregion // PUBLIC_MEMBER_VARIABLES
+    public DrillController Drill;
+    public ParticleSystem DrillEffectSmoke;
+    public ParticleSystem DrillEffectRocks;
+    public RockPileController RockPile;
 
-    #region PUBLIC_METHODS
+    const string ANIMATION_IS_DRILLING = "IsDrilling";
+    const string ANIMATION_IS_WAVING = "IsWaving";
+    
+    bool IsDrilling
+    {
+        get => mAnimator.GetBool(ANIMATION_IS_DRILLING);
+        set => mAnimator.SetBool(ANIMATION_IS_DRILLING, value);
+    }
+
+    bool IsWaving
+    {
+        get => mAnimator.GetBool(ANIMATION_IS_WAVING);
+        set => mAnimator.SetBool(ANIMATION_IS_WAVING, value);
+    }
+    
     public override void OnEnter()
     {
         base.OnEnter();
-        m_EvtOnEnter.Invoke();
+        OnEnterEvent.Invoke();
     }
 
     public override void OnExit()
     {
         base.OnExit();
-        m_Drill.m_IsDrilling = false;
+        Drill.IsDrilling = false;
         IsWaving = false;
     }
 
@@ -36,85 +48,57 @@ public class Astronaut : Augmentation
         IsDrilling = true;
     }
 
-    public void AnimEvt_ScaleUpDrill()
+    public void SetAnimationIsDrillingToTrue()
     {
-        Debug.Log("AnimEvt_ScaleUpDrill() called.");
-
-        m_Drill.m_IsDrilling = true;
+        Drill.IsDrilling = true;
+    }
+    
+    public void SetAnimationIsDrillingToFalse()
+    {
+        Drill.IsDrilling = false;
     }
 
-    public void AnimEvt_ScaleDownDrill()
+    public void SetAnimationDrillEffectOn()
     {
-        Debug.Log("AnimEvt_ScaleDownDrill() called.");
+        SetDrillEffect(true);
+    }
+    
+    public void SetAnimationDrillEffectOff()
+    {
+        SetDrillEffect(false);
+    }
+    
+    void SetDrillEffect(bool value)
+    {
+        var emissionSmoke = DrillEffectSmoke.emission;
+        emissionSmoke.enabled = value;
 
-        m_Drill.m_IsDrilling = false;
+        var emissionRocks = DrillEffectRocks.emission;
+        emissionRocks.enabled = value;
+
+        if (value)
+        {
+            DrillEffectSmoke.Play();
+            DrillEffectRocks.Play();
+            RockPile.FadeIn();
+        }
+        else
+            RockPile.FadeOut();
     }
 
-    public void AnimEvt_PlayDrillEffect()
-    {
-        Debug.Log("AnimEvt_PlayDrillEffect() called.");
-
-        var emissionSmoke = m_DrillEffectSmoke.emission;
-        emissionSmoke.enabled = true;
-
-        var emissionRocks = m_DrillEffectRocks.emission;
-        emissionRocks.enabled = true;
-
-        m_DrillEffectSmoke.Play();
-        m_DrillEffectRocks.Play();
-
-        m_RockPile.FadeIn();
-    }
-
-    public void AnimEvt_StopDrillEffect()
-    {
-        Debug.Log("AnimEvt_StopDrillEffect() called.");
-
-        var emissionSmoke = m_DrillEffectSmoke.emission;
-        emissionSmoke.enabled = false;
-
-        var emissionRocks = m_DrillEffectRocks.emission;
-        emissionRocks.enabled = false;
-
-        m_RockPile.FadeOut();
-    }
-
-    public void AnimEvt_StopWaving()
+    public void SetAnimationWavingOff()
     {
         IsWaving = false;
     }
 
-    public void AnimEvt_StartWaving()
-    {
-        IsWaving = true;
-    }
-
     public void HandleVirtualButtonPressed()
     {
-        AnimEvt_StartWaving();
+        IsWaving = true;
     }
 
     public void HandleVirtualButtonReleased()
     {
 
     }
-    #endregion // PUBLIC_METHODS
-
-
-    #region PRIVATE_METHODS
-
-    private bool IsDrilling
-    {
-        get { return animator.GetBool("IsDrilling"); }
-        set { animator.SetBool("IsDrilling", value); }
-    }
-
-    private bool IsWaving
-    {
-        get { return animator.GetBool("IsWaving"); }
-        set { animator.SetBool("IsWaving", value); }
-    }
-
-    #endregion // PRIVATE_METHODS
 }
 

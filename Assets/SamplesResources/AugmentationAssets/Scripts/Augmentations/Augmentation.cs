@@ -1,5 +1,5 @@
-﻿/*========================================================================
-Copyright (c) 2017 PTC Inc. All Rights Reserved.
+/*========================================================================
+Copyright (c) 2021 PTC Inc. All Rights Reserved.
  
 Confidential and Proprietary - Protected under copyright and other laws.
 Vuforia is a trademark of PTC Inc., registered in the United States and other
@@ -12,49 +12,24 @@ using UnityEngine;
 
 public abstract class Augmentation : MonoBehaviour
 {
-    #region PUBLIC_MEMBER_VARIABLES
-    public Action m_EvtOnEnter = delegate { };
-    public Action m_EvtOnExit = delegate { };
-    #endregion //PUBLIC_MEMBER_VARIABLES
-
-    #region PROTECTED_MEMBER_VARIABLES
-    protected Animator animator;
-    #endregion //PROTECTED_MEMBER_VARIABLES
-
-    #region PRIVATE_MEMBER_VARIABLES
-    private bool active;
-    private IEnumerator waitCoroutine;
-    #endregion //PRIVATE_MEMBER_VARIABLES
-
-    #region UNITY_MONOBEHAVIOUR_METHODS
+    public Action OnEnterEvent = delegate { };
+    public Action OnExitEvent = delegate { };
+    
+    protected Animator mAnimator;
+    bool mActive;
+    
     public virtual void Start()
     {
-        animator = GetComponent<Animator>();
-    }
-    #endregion //UNITY_MONOBEHAVIOUR_METHODS
-
-    #region PUBLIC_METHODS
-    public void Enable()
-    {
-        gameObject.SetActive(true);
-
+        mAnimator = GetComponent<Animator>();
         // Don't want to call OnEnter if we haven't called Start yet
-        if (animator != null)
-        {
-            if (waitCoroutine != null)
-            {
-                StopCoroutine(waitCoroutine);
-            }
-
-            waitCoroutine = WaitForThen(1.0f, OnEnter);
-            StartCoroutine(waitCoroutine);
-        }
+        StartCoroutine(WaitForThen(1.0f, OnEnter));
     }
 
     public void Disable()
     {
         OnExit();
     }
+    
     /// <summary>
     /// Restores the objects state as if the scene has been reloaded
     /// </summary>
@@ -63,7 +38,7 @@ public abstract class Augmentation : MonoBehaviour
         Disable();
 
         // Resets all animator parameters and sets animator to default state
-        animator.Rebind();
+        mAnimator.Rebind();
     }
 
     public virtual void OnEnter()
@@ -73,53 +48,37 @@ public abstract class Augmentation : MonoBehaviour
 
     public virtual void OnExit()
     {
-        m_EvtOnExit.Invoke();
-        Debug.Log("Did exit: " + gameObject.name);
+        OnExitEvent.Invoke();
     }
-
-
+    
     /// <summary>
-    /// Enables or disables all renderers on a gameobject and its children
+    /// Enables or disables all renderers on a GameObject and its children
     /// </summary>
-    /// <param name="enabled">True to enable renderers, false to disable them</param>
-    public virtual void SetRenderersEnabled(bool enabled)
+    /// <param name="enable">True to enable renderers, false to disable them</param>
+    public virtual void SetRenderersEnabled(bool enable)
     {
-
-        Renderer[] components = GetComponentsInChildren<Renderer>(true);
-
-        // Enable rendering:
-        foreach (Renderer component in components)
-        {
-            component.enabled = true;
-        }
+        var components = GetComponentsInChildren<Renderer>(true);
+        foreach (var component in components)
+            component.enabled = enable;
     }
 
     /// <summary>
-    /// Enables or disables all colliders on a gameobject and its children
+    /// Enables or disables all colliders on a GameObject and its children
     /// </summary>
-    /// <param name="enabled">True to enable colliders, false to disable them</param>
-    public virtual void SetCollidersEnabled(bool enabled)
+    /// <param name="enable">True to enable colliders, false to disable them</param>
+    public virtual void SetCollidersEnabled(bool enable)
     {
-        Collider[] components = GetComponentsInChildren<Collider>(true);
-
-        // Enable rendering:
-        foreach (Collider component in components)
-        {
-            component.enabled = true;
-        }
+        var components = GetComponentsInChildren<Collider>(true);
+        foreach (var component in components)
+            component.enabled = enable;
     }
-    #endregion // PUBLIC_METHODS
-
-    #region PROTECTED_METHODS
-
+    
     /// <summary>
     /// Waits for a number of seconds then performs an action
     /// </summary>
-    protected IEnumerator WaitForThen(float waitSeconds, Action action)
+    IEnumerator WaitForThen(float waitSeconds, Action action)
     {
         yield return new WaitForSeconds(waitSeconds);
         action();
     }
-    #endregion
-
 }

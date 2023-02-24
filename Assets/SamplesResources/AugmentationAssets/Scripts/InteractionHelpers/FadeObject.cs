@@ -1,5 +1,5 @@
-﻿/*========================================================================
-Copyright (c) 2017 PTC Inc. All Rights Reserved.
+/*========================================================================
+Copyright (c) 2021 PTC Inc. All Rights Reserved.
  
 Confidential and Proprietary - Protected under copyright and other laws.
 Vuforia is a trademark of PTC Inc., registered in the United States and other
@@ -13,120 +13,111 @@ using UnityEngine;
 /// </summary>
 public class FadeObject : MonoBehaviour
 {
-    #region PUBLIC_MEMBER_VARIABLES
-    public bool m_IsVisible;
-    public float m_FadeDuration = 1f;
-    public Renderer[] m_RenderersToFade;
-    #endregion // PUBLIC_MEMBER_VARIABLES
+    public bool IsVisible;
+    public float FadeDuration = 1f;
+    public Renderer[] RenderersToFade;
 
-    #region PRIVATE_MEMBER_VARIABLES
-    float fadeRatio;
-    bool isInitialOpacitySet;
-    #endregion // PRIVATE_MEMBER_VARIABLES
+    float mFadeRatio;
+    bool mIsInitialOpacitySet;
 
-    #region UNITY_MONOBEHAVIOUR_METHODS
-
+    const string SHADER_COLOR_PROPERTY = "_Color";
+    const string SHADER_FLAG_SOURCE_BLEND = "_SrcBlend";
+    const string SHADER_FLAG_DESTINATION_BLEND = "_DstBlend";
+    const string SHADER_FLAG_ZWRITE = "_ZWrite";
+    const string SHADER_KEYWORD_ALPHA_TEST = "_ALPHATEST_ON";
+    const string SHADER_KEYWORD_ALPHA_BLEND = "_ALPHABLEND_ON";
+    const string SHADER_KEYWORD_ALPHA_MULTIPLY = "_ALPHAPREMULTIPLY_ON";
+    
     void Awake()
     {
-        foreach (var renderer in m_RenderersToFade)
-        {
+        foreach (var renderer in RenderersToFade)
             renderer.sharedMaterial = Instantiate(renderer.sharedMaterial);
-        }
 
-        //If we haven't already set the initial opacity, set it based on IsVisible bool
-        if (!isInitialOpacitySet)
+        // If we haven't already set the initial opacity, set it based on IsVisible bool
+        if (!mIsInitialOpacitySet)
         {
-            float opacity = m_IsVisible ? 1.0f : 0.0f;
+            var opacity = IsVisible ? 1.0f : 0.0f;
             SetInitialOpacity(opacity);
         }
     }
 
     void Update()
     {
-        if (m_IsVisible && fadeRatio < 1.0f)
+        if (IsVisible && mFadeRatio < 1.0f)
         {
-            fadeRatio += Time.deltaTime / m_FadeDuration;
-            if (fadeRatio > 1.0f)
+            mFadeRatio += Time.deltaTime / FadeDuration;
+            if (mFadeRatio > 1.0f)
             {
-                fadeRatio = 1.0f;
-                SetRenderingMode(true);
+                mFadeRatio = 1.0f;
+                SetOpaque();
             }
-            SetOpacity(fadeRatio);
+            SetOpacity(mFadeRatio);
         }
-        else if (!m_IsVisible && fadeRatio > 0.0f)
+        else if (!IsVisible && mFadeRatio > 0.0f)
         {
-            fadeRatio -= Time.deltaTime / m_FadeDuration;
-            if (fadeRatio < 0.0f)
-            {
-                fadeRatio = 0.0f;
-            }
-            SetOpacity(fadeRatio);
-            SetRenderingMode(false);
+            mFadeRatio -= Time.deltaTime / FadeDuration;
+            if (mFadeRatio < 0.0f)
+                mFadeRatio = 0.0f;
+            SetOpacity(mFadeRatio);
+            SetTransparent();
         }
     }
-
-    #endregion // UNITY_MONOBEHAVIOUR_METHODS
-
-
-    #region PUBLIC_METHODS
+    
     /// <summary>
     /// Immediately changes the opacity and prevents this script from setting its on opacity on start
     /// </summary>
     public void SetInitialOpacity(float opacity)
     {
-        fadeRatio = opacity;
+        mFadeRatio = opacity;
         SetOpacity(opacity);
-        SetRenderingMode(opacity >= 1.0f);
-        isInitialOpacitySet = true;
+        if (opacity >= 1.0f)
+            SetOpaque();
+        else
+            SetTransparent();
+        mIsInitialOpacitySet = true;
     }
-    #endregion // PUBLIC_METHODS
-
-
-    #region PRIVATE_METHODS
+    
     void SetOpacity(float opacity)
     {
-        foreach (var renderer in m_RenderersToFade)
+        foreach (var renderer in RenderersToFade)
         {
-            if(renderer.sharedMaterial.HasProperty("_Color"))
+            if(renderer.sharedMaterial.HasProperty(SHADER_COLOR_PROPERTY))
             {
-                Color fadedColor = renderer.sharedMaterial.GetColor("_Color");
+                var fadedColor = renderer.sharedMaterial.GetColor(SHADER_COLOR_PROPERTY);
                 fadedColor.a = opacity;
-                renderer.sharedMaterial.SetColor("_Color", fadedColor);
+                renderer.sharedMaterial.SetColor(SHADER_COLOR_PROPERTY, fadedColor);
             }
         }
     }
 
-    /// <summary>
-    /// Sets the rendering mode to either Opaque or Fade
-    /// </summary>
-    /// <param name="isOpaque"></param>
-    void SetRenderingMode(bool isOpaque)
+    void SetOpaque()
     {
-        foreach (var renderer in m_RenderersToFade)
+        foreach (var fadeRenderer in RenderersToFade)
         {
-            Material mat = renderer.sharedMaterial;
-            if (isOpaque)
-            {
-                mat.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.One);
-                mat.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.Zero);
-                mat.SetInt("_ZWrite", 1);
-                mat.DisableKeyword("_ALPHATEST_ON");
-                mat.DisableKeyword("_ALPHABLEND_ON");
-                mat.DisableKeyword("_ALPHAPREMULTIPLY_ON");
-                mat.renderQueue = -1;
-            }
-            else
-            {
-                mat.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
-                mat.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
-                mat.SetInt("_ZWrite", 0);
-                mat.DisableKeyword("_ALPHATEST_ON");
-                mat.EnableKeyword("_ALPHABLEND_ON");
-                mat.DisableKeyword("_ALPHAPREMULTIPLY_ON");
-                mat.renderQueue = 3000;
-            }
+            var mat = fadeRenderer.sharedMaterial;
+            mat.SetInt(SHADER_FLAG_SOURCE_BLEND, (int) UnityEngine.Rendering.BlendMode.One);
+            mat.SetInt(SHADER_FLAG_DESTINATION_BLEND, (int) UnityEngine.Rendering.BlendMode.Zero);
+            mat.SetInt(SHADER_FLAG_ZWRITE, 1);
+            mat.DisableKeyword(SHADER_KEYWORD_ALPHA_TEST);
+            mat.DisableKeyword(SHADER_KEYWORD_ALPHA_BLEND);
+            mat.DisableKeyword(SHADER_KEYWORD_ALPHA_MULTIPLY);
+            mat.renderQueue = -1;
         }
     }
-    #endregion // PRIVATE_METHODS
+
+    void SetTransparent()
+    {
+        foreach (var fadeRenderer in RenderersToFade)
+        {
+            var mat = fadeRenderer.sharedMaterial;
+            mat.SetInt(SHADER_FLAG_SOURCE_BLEND, (int) UnityEngine.Rendering.BlendMode.SrcAlpha);
+            mat.SetInt(SHADER_FLAG_DESTINATION_BLEND, (int) UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
+            mat.SetInt(SHADER_FLAG_ZWRITE, 0);
+            mat.DisableKeyword(SHADER_KEYWORD_ALPHA_TEST);
+            mat.EnableKeyword(SHADER_KEYWORD_ALPHA_BLEND);
+            mat.DisableKeyword(SHADER_KEYWORD_ALPHA_MULTIPLY);
+            mat.renderQueue = 3000;
+        }
+    }
 }
 
