@@ -3,10 +3,10 @@
   "packages": {
     "com.ptc.vuforia.engine": {
       "tarball": {
-        "hash": "ad7ad60b4246",
-        "mtime": 1675187989000,
-        "size": 146676753,
-        "localPath": "/Users/RomanInteractive/Documents/GitHub/PaseoCoyoacan/Packages/com.ptc.vuforia.engine-10.13.3.tgz"
+        "hash": "64a4bf61052d",
+        "mtime": 1679417160000,
+        "size": 147494112,
+        "localPath": "/Users/RomanInteractive/Documents/GitHub/PaseoCoyoacan/Packages/com.ptc.vuforia.engine-10.14.4.tgz"
       }
     }
   }
