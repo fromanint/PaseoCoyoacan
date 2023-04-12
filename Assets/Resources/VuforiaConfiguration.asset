@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vuforia:
     vuforiaLicenseKey: AQmvpqr/////AAABmZkkuD623kyOniJiTNqcixx1KqJYWpFSAqsKQ98VWVzXsBBhH9SQjnosf9VEhWH8mNxBRTULQEFl+oft/EgZLhqc2zheFrqb+dlcU2G1NDl2p7iEjwSD4fTZ5WgLXQfsET2Ot9jVgkIUj1V1fSmA6HCoulQ2ykkVhwrt7rCToCOv0i+ml8XmaeKGvMDFAnRPVpOihgJmxDtnFojHqEGNS8b0Y4olz/ECxEjv2D5C5H2umUvikzpUUCpG5GKbp+mFkLGFRSQFIEwatG3bcW46gBNhiCwlvLYhAG038awEQTfVxecdPFdHpcAFSsZD7+0SKVSV9R8w2Z5U3/miYZL2F2P6m9pkCU2AWD5OdfwP04Ud
-    ufoLicenseKey: QVQ3aU16SC8vLy8vQUFBQUtCQlJzcXlhVlUycnZJTlIyQlVhZnVsYU5jUjlXc2hpamsxNmVUSkNqT1dvamcyT3NmakNRWjZjQ3hDNWhoRGJXOW9yKzlHcDhNZ1ZFZVpKeUdXL3FXZm16TlQ2TE1GT3hLMGVkRUdTckRYTjFKdDhwenI0SEh4Tisyei9sUGJlOTBHeXYxS1JQRmhqcGk2UDFlRkdKTmZIYi82QXRYaEJtK2NKMFBrczBEbGt6NzJYVW1TNUI4eEtxcTV2cjhQVDhuQ0o4Y1NiQ3c3b1VaVTVwajFhTDlZTnZhNzlxNG5nT2V1T2JwaGM2Nm1UVG05U2gyNUlWUUJQaFUyTUIwTHhKT2wwMzVuZzFkbGlhbVBWeDFvclczZ1A2dUlDWDF4enZRL291dTdqMmZSVzZQKzMrNndRNStidWRWVG1YQnRpK0JmKzZXZ3pYbXd1dWsxbkNLU2RLSFh6QWtyampRR3pHdVFYc2dMZTE1cXc=
+    ufoLicenseKey: QVU3RHNySC8vLy8vQUFBQUtEc2EveEtGWTBEN29xb1RBMGRaZG82YXpGdTFuQXJvSksya1NFY1U2MDdPSEFaQ0wxbHlGVEhrVGlkeERYYVVoUTFuQmkxUzhUU2huQVNHb0U1VnJkTTdIL3VyRWRHcm4vaDkzMU5TUllPcDdnWU1Fbit3aFA3WDgwQVl3RFU2YUFQWmxmamMrR0lGcEVvanJOd1ArbnVUUUFIWW9IUno0NUZ2MjhQaXkrMUhNQnhveUxsTXBiaFZTMTV6dEtGSlFpcC95N0ZsWFZIZnNrUEp5Q0pUd2VCRk95UFVkb21XTjlWMlltUVo1MnNFMndMRVVXRjFzWDRIYW85T3NER29wV2Z0RFpEWXRaV1JnNWxSa0ZOUTVmUWdWaWdlV25LQ1krZGRKQjF3NEMzdkZDR0RobVo3bjZLY1doMHNWaEZVd0p2c29NbkQ3eTk3Ly9yWkUwdzBweE1EWVZTY05ZMTZEMWZjQkIrRmNaUkg=
     delayedInitialization: 0
     cameraFocusModeSetting: 2
     cameraDeviceModeSetting: -1
@@ -24,17 +24,17 @@ MonoBehaviour:
     shareRecordingsInITunes: 0
     logLevel: 0
     version: 10.14.4
-    eulaAcceptedVersions: '{"Values":["","8.5","7.1","7.2","7.5","7.7","8.0","0.0","8.1","7.9","8.2","8.3","8.4","7.6","7.8","2.9","8.6","9.0","8.7","10.7","10.8","10.9","10.12","10.10","10.13","10.14"]}'
+    eulaAcceptedVersions: '{"Values":["0.0","8.5","7.1","7.2","7.5","7.7","8.0","8.1","7.9","8.2","8.3","8.4","7.6","7.8","2.9","8.6","9.0","8.7","10.7","10.8","10.9","10.14"]}'
   database:
     disableModelExtraction: 0
   shaders:
-    depthMaskShader: {fileID: 4800000, guid: 1ce7eb78425fb1540838bc9d5d95857a, type: 3}
-    outlineShader: {fileID: 4800000, guid: c1ded68d068051d4f92650fcddaae5c7, type: 3}
+    depthMaskShader: {fileID: 4800000, guid: 9894afa5f3a5e4bbca625981beb1b20e, type: 3}
+    outlineShader: {fileID: 4800000, guid: 88d3b6b5cf364476ca39fcec255331b1, type: 3}
     unlitTransparentShader: {fileID: 10750, guid: 0000000000000000f000000000000000,
       type: 0}
   videoBackground:
     numDivisions: 2
-    videoBackgroundShader: {fileID: 4800000, guid: f40623b353e2f1943b1b3ba42975db7a,
+    videoBackgroundShader: {fileID: 4800000, guid: 144dfca22ac584ade9e538e24a5ddded,
       type: 3}
     unlitShader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
     videoBackgroundEnabled: 1
