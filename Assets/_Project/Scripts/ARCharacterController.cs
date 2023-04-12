@@ -43,14 +43,14 @@ public class ARCharacterController : MonoBehaviour
         if (GlobalVariables.history == "history")
         {
             audioSource.clip = audioHistory;
-           // animation.AddClip(animationHistory, "HistoryAnimation");
-         //   animation.Play("HistoryAnimation");
+             animation.Play(animationHistory.name);
         }
         else
         {
             audioSource.clip = audioLegend;
-           //  animation.AddClip(animationLegend, "LegendAnimation");
-          //  animation.Play("LegendAnimation");
+            animation.Play(animationLegend.name);
+            //  animation.AddClip(animationLegend, "LegendAnimation");
+            //  animation.Play("LegendAnimation");
         }
 
         audioSource.Play();
