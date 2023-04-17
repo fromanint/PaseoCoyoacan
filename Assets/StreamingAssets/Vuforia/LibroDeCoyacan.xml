@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="PC-9-A2-2" size="1.000000 1.009579" />
+    <ImageTarget name="PC-12-MI4-2" size="1.000000 1.008696" />
+    <ImageTarget name="PC-12-MI3-2" size="1.000000 1.010435" />
+    <ImageTarget name="PC-12-MI2-2" size="1.000000 1.008865" />
+    <ImageTarget name="PC-12-MI1-2" size="1.000000 1.010695" />
+    <ImageTarget name="PC-11-CR4-2" size="1.000000 1.010753" />
+    <ImageTarget name="PC-11-CR3-2" size="1.000000 1.010033" />
+    <ImageTarget name="PC-11-CR2-2" size="1.000000 1.009191" />
+    <ImageTarget name="PC-11-CR1-2" size="1.000000 1.010000" />
+    <ImageTarget name="PC-10-SA4-2" size="1.000000 1.010545" />
+    <ImageTarget name="PC-10-SA3-2" size="1.000000 1.009416" />
+    <ImageTarget name="PC-10-SA2-2" size="1.000000 1.009524" />
+    <ImageTarget name="PC-10-SA1-2" size="1.000000 1.010170" />
+    <ImageTarget name="PC-9-A4-2" size="1.000000 1.010582" />
+    <ImageTarget name="PC-9-A3-2" size="1.000000 1.008741" />
+    <ImageTarget name="PC-9-A1-2" size="1.000000 1.010435" />
+    <ImageTarget name="PC-8-CA3-2" size="1.000000 1.008386" />
+    <ImageTarget name="PC-8-CA4-2" size="1.000000 1.010638" />
+    <ImageTarget name="PC-8-CA2-2" size="1.000000 1.010327" />
+    <ImageTarget name="PC-8-CA1-2" size="1.000000 1.010239" />
+    <ImageTarget name="PC-7-FN4-2" size="1.000000 1.010753" />
+    <ImageTarget name="PC-7-FN3-2" size="1.000000 1.011236" />
+    <ImageTarget name="PC-7-FN2-2" size="1.000000 1.010033" />
+    <ImageTarget name="PC-3-LT4-2" size="1.000000 1.011257" />
+    <ImageTarget name="PC-7-FN1-2" size="1.000000 1.010152" />
+    <ImageTarget name="PC-6-MA4-2" size="1.000000 1.011385" />
+    <ImageTarget name="PC-6-MA3-2" size="1.000000 1.009901" />
+    <ImageTarget name="PC-6-MA2-2" size="1.000000 1.010163" />
+    <ImageTarget name="PC-6-MA1-2" size="1.000000 1.011152" />
+    <ImageTarget name="PC-5-RH4-2" size="1.000000 1.010135" />
+    <ImageTarget name="PC-5-RH3-2" size="1.000000 1.010135" />
+    <ImageTarget name="PC-5-RH2-2" size="1.000000 1.010135" />
+    <ImageTarget name="PC-5-RH1-2" size="1.000000 1.010204" />
+    <ImageTarget name="PC-4-JC4-2" size="1.000000 1.010225" />
+    <ImageTarget name="PC-4-JC3-2" size="1.000000 1.008913" />
+    <ImageTarget name="PC-4-JC2-2" size="1.000000 1.010050" />
+    <ImageTarget name="PC-4-JC1-2" size="1.000000 1.010101" />
+    <ImageTarget name="PC-3-LT3-2" size="1.000000 1.011009" />
+    <ImageTarget name="PC-3-LT2-2" size="1.000000 1.010363" />
+    <ImageTarget name="PC-3-LT1-2" size="1.000000 1.011472" />
+    <ImageTarget name="PC-2-SJB4-2" size="1.000000 1.010187" />
+    <ImageTarget name="PC-2-SJB3-2" size="1.000000 1.011765" />
+    <ImageTarget name="PC-2-SJB2-2" size="1.000000 1.010118" />
+    <ImageTarget name="PC-2-SJB1-2" size="1.000000 1.010170" />
+    <ImageTarget name="PC-1-CC4-2" size="1.000000 1.010204" />
+    <ImageTarget name="PC-1-CC3-2" size="1.000000 1.009294" />
+    <ImageTarget name="PC-1-CC2-2" size="1.000000 1.010292" />
+    <ImageTarget name="PC-1-CC1-2" size="1.000000 1.009174" />
+    <ImageTarget name="PC-0-Intro1" size="1.000000 1.010909" />
+    <ImageTarget name="PC-0-Cover-1" size="1.000000 1.042969" />
+  </Tracking>
+</QCARConfig>
