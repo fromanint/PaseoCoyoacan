@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 14810306}
   - component: {fileID: 14810305}
   - component: {fileID: 14810304}
-  - component: {fileID: 14810303}
+  - component: {fileID: 14810307}
   m_Layer: 0
   m_Name: C
   m_TagString: Untagged
@@ -159,25 +159,6 @@ Transform:
   m_Father: {fileID: 325333664}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &14810303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 14810301}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 14810306}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-8-CA3-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 14810306}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &14810304
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,7 +274,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 14810303}
+  mPreview: {fileID: 14810307}
+--- !u!114 &14810307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 14810301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 14810306}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-8-CA3-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 14810306}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &16694263
 GameObject:
   m_ObjectHideFlags: 0
@@ -306,7 +306,7 @@ GameObject:
   - component: {fileID: 16694268}
   - component: {fileID: 16694267}
   - component: {fileID: 16694266}
-  - component: {fileID: 16694265}
+  - component: {fileID: 16694269}
   m_Layer: 0
   m_Name: C
   m_TagString: Untagged
@@ -330,25 +330,6 @@ Transform:
   m_Father: {fileID: 84429466}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &16694265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 16694263}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 16694268}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-4-JC3-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 16694268}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &16694266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -464,7 +445,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 16694265}
+  mPreview: {fileID: 16694269}
+--- !u!114 &16694269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16694263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 16694268}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-4-JC3-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 16694268}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &20703511
 GameObject:
   m_ObjectHideFlags: 0
@@ -477,7 +477,7 @@ GameObject:
   - component: {fileID: 20703516}
   - component: {fileID: 20703515}
   - component: {fileID: 20703514}
-  - component: {fileID: 20703513}
+  - component: {fileID: 20703517}
   m_Layer: 0
   m_Name: B
   m_TagString: Untagged
@@ -501,25 +501,6 @@ Transform:
   m_Father: {fileID: 325333664}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &20703513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 20703511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 20703516}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-8-CA2-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 20703516}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &20703514
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -635,7 +616,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 20703513}
+  mPreview: {fileID: 20703517}
+--- !u!114 &20703517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 20703511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 20703516}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-8-CA2-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 20703516}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &50724254
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,7 +648,7 @@ GameObject:
   - component: {fileID: 50724259}
   - component: {fileID: 50724258}
   - component: {fileID: 50724257}
-  - component: {fileID: 50724256}
+  - component: {fileID: 50724260}
   m_Layer: 0
   m_Name: C
   m_TagString: Untagged
@@ -672,25 +672,6 @@ Transform:
   m_Father: {fileID: 879257731}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &50724256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 50724254}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 50724259}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-1-CC3-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 50724259}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &50724257
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -806,7 +787,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 50724256}
+  mPreview: {fileID: 50724260}
+--- !u!114 &50724260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 50724254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 50724259}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-1-CC3-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 50724259}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &72891663
 GameObject:
   m_ObjectHideFlags: 0
@@ -885,7 +885,7 @@ GameObject:
   - component: {fileID: 96408877}
   - component: {fileID: 96408876}
   - component: {fileID: 96408875}
-  - component: {fileID: 96408874}
+  - component: {fileID: 96408878}
   m_Layer: 0
   m_Name: B
   m_TagString: Untagged
@@ -909,25 +909,6 @@ Transform:
   m_Father: {fileID: 2037286134}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &96408874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 96408872}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 96408877}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-2-SJB2-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 96408877}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &96408875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1043,7 +1024,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 96408874}
+  mPreview: {fileID: 96408878}
+--- !u!114 &96408878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96408872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 96408877}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-2-SJB2-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 96408877}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &121744649
 GameObject:
   m_ObjectHideFlags: 0
@@ -1262,7 +1262,7 @@ GameObject:
   - component: {fileID: 141763477}
   - component: {fileID: 141763476}
   - component: {fileID: 141763475}
-  - component: {fileID: 141763474}
+  - component: {fileID: 141763478}
   m_Layer: 0
   m_Name: C
   m_TagString: Untagged
@@ -1286,25 +1286,6 @@ Transform:
   m_Father: {fileID: 888813942}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &141763474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 141763472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 141763477}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-12-MI3-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 141763477}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &141763475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1420,7 +1401,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 141763474}
+  mPreview: {fileID: 141763478}
+--- !u!114 &141763478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141763472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 141763477}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-12-MI3-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 141763477}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &164328744
 GameObject:
   m_ObjectHideFlags: 0
@@ -1524,7 +1524,7 @@ GameObject:
   - component: {fileID: 175082946}
   - component: {fileID: 175082945}
   - component: {fileID: 175082944}
-  - component: {fileID: 175082943}
+  - component: {fileID: 175082947}
   m_Layer: 0
   m_Name: A
   m_TagString: Untagged
@@ -1548,25 +1548,6 @@ Transform:
   m_Father: {fileID: 1895064163}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &175082943
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 175082941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 175082946}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-5-RH1-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 175082946}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &175082944
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1682,7 +1663,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 175082943}
+  mPreview: {fileID: 175082947}
+--- !u!114 &175082947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 175082941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 175082946}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-5-RH1-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 175082946}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &193960988
 GameObject:
   m_ObjectHideFlags: 0
@@ -1695,7 +1695,7 @@ GameObject:
   - component: {fileID: 193960993}
   - component: {fileID: 193960992}
   - component: {fileID: 193960991}
-  - component: {fileID: 193960990}
+  - component: {fileID: 193960994}
   m_Layer: 0
   m_Name: D
   m_TagString: Untagged
@@ -1719,25 +1719,6 @@ Transform:
   m_Father: {fileID: 1924026283}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &193960990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 193960988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 193960993}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-6-MA4-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 193960993}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &193960991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1853,7 +1834,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 193960990}
+  mPreview: {fileID: 193960994}
+--- !u!114 &193960994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 193960988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 193960993}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-6-MA4-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 193960993}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &209100981
 GameObject:
   m_ObjectHideFlags: 0
@@ -1897,7 +1897,7 @@ GameObject:
   - component: {fileID: 209562057}
   - component: {fileID: 209562056}
   - component: {fileID: 209562055}
-  - component: {fileID: 209562054}
+  - component: {fileID: 209562058}
   m_Layer: 0
   m_Name: D
   m_TagString: Untagged
@@ -1921,25 +1921,6 @@ Transform:
   m_Father: {fileID: 1871569963}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &209562054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 209562052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 209562057}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-3-LT4-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 209562057}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &209562055
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2055,7 +2036,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 209562054}
+  mPreview: {fileID: 209562058}
+--- !u!114 &209562058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209562052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 209562057}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-3-LT4-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 209562057}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &227974951
 GameObject:
   m_ObjectHideFlags: 0
@@ -2068,7 +2068,7 @@ GameObject:
   - component: {fileID: 227974956}
   - component: {fileID: 227974955}
   - component: {fileID: 227974954}
-  - component: {fileID: 227974953}
+  - component: {fileID: 227974957}
   m_Layer: 0
   m_Name: B
   m_TagString: Untagged
@@ -2092,25 +2092,6 @@ Transform:
   m_Father: {fileID: 879257731}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &227974953
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 227974951}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 227974956}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-1-CC2-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 227974956}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &227974954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2226,7 +2207,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 227974953}
+  mPreview: {fileID: 227974957}
+--- !u!114 &227974957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 227974951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 227974956}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-1-CC2-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 227974956}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &234984693
 GameObject:
   m_ObjectHideFlags: 0
@@ -2270,7 +2270,7 @@ GameObject:
   - component: {fileID: 240273797}
   - component: {fileID: 240273796}
   - component: {fileID: 240273795}
-  - component: {fileID: 240273794}
+  - component: {fileID: 240273798}
   m_Layer: 0
   m_Name: C
   m_TagString: Untagged
@@ -2294,25 +2294,6 @@ Transform:
   m_Father: {fileID: 1924026283}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &240273794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 240273792}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 240273797}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-6-MA3-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 240273797}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &240273795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2428,7 +2409,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 240273794}
+  mPreview: {fileID: 240273798}
+--- !u!114 &240273798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 240273792}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 240273797}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-6-MA3-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 240273797}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &259766571
 GameObject:
   m_ObjectHideFlags: 0
@@ -2476,7 +2476,7 @@ GameObject:
   - component: {fileID: 280747038}
   - component: {fileID: 280747037}
   - component: {fileID: 280747036}
-  - component: {fileID: 280747035}
+  - component: {fileID: 280747039}
   m_Layer: 0
   m_Name: B
   m_TagString: Untagged
@@ -2500,25 +2500,6 @@ Transform:
   m_Father: {fileID: 130781074}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &280747035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 280747033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 280747038}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-11-CR2-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 280747038}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &280747036
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2634,7 +2615,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 280747035}
+  mPreview: {fileID: 280747039}
+--- !u!114 &280747039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280747033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 280747038}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-11-CR2-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 280747038}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &294368795
 GameObject:
   m_ObjectHideFlags: 0
@@ -2848,7 +2848,7 @@ GameObject:
   - component: {fileID: 354910249}
   - component: {fileID: 354910252}
   - component: {fileID: 354910251}
-  - component: {fileID: 354910250}
+  - component: {fileID: 354910253}
   m_Layer: 0
   m_Name: C
   m_TagString: Untagged
@@ -2872,25 +2872,6 @@ Transform:
   m_Father: {fileID: 259766572}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &354910250
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 354910248}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 354910252}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-10-SA3-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 354910252}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &354910251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2985,7 +2966,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 354910250}
+  mPreview: {fileID: 354910253}
+--- !u!114 &354910253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 354910248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 354910252}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-10-SA3-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 354910252}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &376945398
 GameObject:
   m_ObjectHideFlags: 0
@@ -3091,7 +3091,7 @@ GameObject:
   - component: {fileID: 427663890}
   - component: {fileID: 427663889}
   - component: {fileID: 427663888}
-  - component: {fileID: 427663887}
+  - component: {fileID: 427663891}
   m_Layer: 0
   m_Name: D
   m_TagString: Untagged
@@ -3115,25 +3115,6 @@ Transform:
   m_Father: {fileID: 1698352174}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &427663887
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 427663885}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 427663890}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-7-FN4-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 427663890}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &427663888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3249,7 +3230,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 427663887}
+  mPreview: {fileID: 427663891}
+--- !u!114 &427663891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427663885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 427663890}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-7-FN4-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 427663890}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &442141424
 GameObject:
   m_ObjectHideFlags: 0
@@ -3262,7 +3262,7 @@ GameObject:
   - component: {fileID: 442141429}
   - component: {fileID: 442141428}
   - component: {fileID: 442141427}
-  - component: {fileID: 442141426}
+  - component: {fileID: 442141430}
   m_Layer: 0
   m_Name: C
   m_TagString: Untagged
@@ -3286,25 +3286,6 @@ Transform:
   m_Father: {fileID: 1895064163}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &442141426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 442141424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 442141429}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-5-RH3-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 442141429}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &442141427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3420,7 +3401,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 442141426}
+  mPreview: {fileID: 442141430}
+--- !u!114 &442141430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 442141424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 442141429}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-5-RH3-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 442141429}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &452271407
 GameObject:
   m_ObjectHideFlags: 0
@@ -3433,7 +3433,7 @@ GameObject:
   - component: {fileID: 452271411}
   - component: {fileID: 452271410}
   - component: {fileID: 452271409}
-  - component: {fileID: 452271408}
+  - component: {fileID: 452271413}
   m_Layer: 0
   m_Name: Contenido
   m_TagString: Untagged
@@ -3441,25 +3441,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &452271408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 452271407}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 452271411}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-0-Intro1
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 452271411}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &452271409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3575,7 +3556,7 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 452271408}
+  mPreview: {fileID: 452271413}
 --- !u!4 &452271412
 Transform:
   m_ObjectHideFlags: 0
@@ -3592,6 +3573,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &452271413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452271407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 452271411}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-0-Intro1
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 452271411}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &484690422
 GameObject:
   m_ObjectHideFlags: 0
@@ -3602,6 +3602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 484690423}
   - component: {fileID: 484690424}
+  - component: {fileID: 484690425}
   m_Layer: 0
   m_Name: Coyoacan-38_scaled 1
   m_TagString: Untagged
@@ -3676,6 +3677,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &484690425
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484690422}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 489ebc2e1e2c94041b7a72085211905e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &501918200
 GameObject:
   m_ObjectHideFlags: 0
@@ -3754,7 +3775,7 @@ GameObject:
   - component: {fileID: 507164518}
   - component: {fileID: 507164517}
   - component: {fileID: 507164516}
-  - component: {fileID: 507164515}
+  - component: {fileID: 507164519}
   m_Layer: 0
   m_Name: A
   m_TagString: Untagged
@@ -3778,25 +3799,6 @@ Transform:
   m_Father: {fileID: 501918201}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &507164515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 507164513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 507164518}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-9-A1-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 507164518}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &507164516
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3912,7 +3914,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 507164515}
+  mPreview: {fileID: 507164519}
+--- !u!114 &507164519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 507164513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 507164518}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-9-A1-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 507164518}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &540235176
 GameObject:
   m_ObjectHideFlags: 0
@@ -3925,7 +3946,7 @@ GameObject:
   - component: {fileID: 540235181}
   - component: {fileID: 540235180}
   - component: {fileID: 540235179}
-  - component: {fileID: 540235178}
+  - component: {fileID: 540235182}
   m_Layer: 0
   m_Name: A
   m_TagString: Untagged
@@ -3949,25 +3970,6 @@ Transform:
   m_Father: {fileID: 879257731}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &540235178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 540235176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 540235181}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-1-CC1-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 540235181}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &540235179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4083,7 +4085,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 540235178}
+  mPreview: {fileID: 540235182}
+--- !u!114 &540235182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 540235176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 540235181}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-1-CC1-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 540235181}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &571009593
 GameObject:
   m_ObjectHideFlags: 0
@@ -4096,7 +4117,7 @@ GameObject:
   - component: {fileID: 571009598}
   - component: {fileID: 571009597}
   - component: {fileID: 571009596}
-  - component: {fileID: 571009595}
+  - component: {fileID: 571009599}
   m_Layer: 0
   m_Name: C
   m_TagString: Untagged
@@ -4120,25 +4141,6 @@ Transform:
   m_Father: {fileID: 130781074}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &571009595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 571009593}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 571009598}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-11-CR3-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 571009598}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &571009596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4254,7 +4256,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 571009595}
+  mPreview: {fileID: 571009599}
+--- !u!114 &571009599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571009593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 571009598}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-11-CR3-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 571009598}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &573743436
 GameObject:
   m_ObjectHideFlags: 0
@@ -4298,7 +4319,7 @@ GameObject:
   - component: {fileID: 582679080}
   - component: {fileID: 582679079}
   - component: {fileID: 582679078}
-  - component: {fileID: 582679077}
+  - component: {fileID: 582679081}
   m_Layer: 0
   m_Name: A
   m_TagString: Untagged
@@ -4322,25 +4343,6 @@ Transform:
   m_Father: {fileID: 325333664}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &582679077
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 582679075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 582679080}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-8-CA1-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 582679080}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &582679078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4456,7 +4458,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 582679077}
+  mPreview: {fileID: 582679081}
+--- !u!114 &582679081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582679075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 582679080}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-8-CA1-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 582679080}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &597939953
 GameObject:
   m_ObjectHideFlags: 0
@@ -4766,7 +4787,7 @@ GameObject:
   - component: {fileID: 734309385}
   - component: {fileID: 734309384}
   - component: {fileID: 734309383}
-  - component: {fileID: 734309382}
+  - component: {fileID: 734309386}
   m_Layer: 0
   m_Name: A
   m_TagString: Untagged
@@ -4790,25 +4811,6 @@ Transform:
   m_Father: {fileID: 2037286134}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &734309382
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 734309380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 734309385}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-2-SJB1-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 734309385}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &734309383
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4924,7 +4926,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 734309382}
+  mPreview: {fileID: 734309386}
+--- !u!114 &734309386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 734309380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 734309385}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-2-SJB1-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 734309385}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &742404325
 GameObject:
   m_ObjectHideFlags: 0
@@ -4937,7 +4958,7 @@ GameObject:
   - component: {fileID: 742404330}
   - component: {fileID: 742404329}
   - component: {fileID: 742404328}
-  - component: {fileID: 742404327}
+  - component: {fileID: 742404331}
   m_Layer: 0
   m_Name: A
   m_TagString: Untagged
@@ -4961,25 +4982,6 @@ Transform:
   m_Father: {fileID: 888813942}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &742404327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 742404325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 742404330}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-12-MI1-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 742404330}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &742404328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5095,7 +5097,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 742404327}
+  mPreview: {fileID: 742404331}
+--- !u!114 &742404331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 742404325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 742404330}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-12-MI1-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 742404330}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &758251308
 GameObject:
   m_ObjectHideFlags: 0
@@ -5139,7 +5160,7 @@ GameObject:
   - component: {fileID: 766636414}
   - component: {fileID: 766636413}
   - component: {fileID: 766636412}
-  - component: {fileID: 766636411}
+  - component: {fileID: 766636415}
   m_Layer: 0
   m_Name: D
   m_TagString: Untagged
@@ -5163,25 +5184,6 @@ Transform:
   m_Father: {fileID: 2037286134}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &766636411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 766636409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 766636414}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-2-SJB4-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 766636414}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &766636412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5297,7 +5299,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 766636411}
+  mPreview: {fileID: 766636415}
+--- !u!114 &766636415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 766636409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 766636414}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-2-SJB4-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 766636414}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &781461950
 GameObject:
   m_ObjectHideFlags: 0
@@ -5310,7 +5331,7 @@ GameObject:
   - component: {fileID: 781461955}
   - component: {fileID: 781461954}
   - component: {fileID: 781461953}
-  - component: {fileID: 781461952}
+  - component: {fileID: 781461956}
   m_Layer: 0
   m_Name: A
   m_TagString: Untagged
@@ -5334,25 +5355,6 @@ Transform:
   m_Father: {fileID: 130781074}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &781461952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 781461950}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 781461955}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-11-CR1-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 781461955}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &781461953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5468,7 +5470,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 781461952}
+  mPreview: {fileID: 781461956}
+--- !u!114 &781461956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781461950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 781461955}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-11-CR1-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 781461955}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &798486271
 GameObject:
   m_ObjectHideFlags: 0
@@ -5481,7 +5502,7 @@ GameObject:
   - component: {fileID: 798486276}
   - component: {fileID: 798486275}
   - component: {fileID: 798486274}
-  - component: {fileID: 798486273}
+  - component: {fileID: 798486277}
   m_Layer: 0
   m_Name: B
   m_TagString: Untagged
@@ -5505,25 +5526,6 @@ Transform:
   m_Father: {fileID: 1698352174}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &798486273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 798486271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 798486276}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-7-FN2-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 798486276}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &798486274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5639,7 +5641,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 798486273}
+  mPreview: {fileID: 798486277}
+--- !u!114 &798486277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798486271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 798486276}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-7-FN2-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 798486276}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &804734976
 GameObject:
   m_ObjectHideFlags: 0
@@ -5714,7 +5735,7 @@ GameObject:
   - component: {fileID: 823205103}
   - component: {fileID: 823205102}
   - component: {fileID: 823205101}
-  - component: {fileID: 823205100}
+  - component: {fileID: 823205104}
   m_Layer: 0
   m_Name: D
   m_TagString: Untagged
@@ -5738,25 +5759,6 @@ Transform:
   m_Father: {fileID: 84429466}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &823205100
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 823205098}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 823205103}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-4-JC4-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 823205103}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &823205101
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5872,7 +5874,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 823205100}
+  mPreview: {fileID: 823205104}
+--- !u!114 &823205104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 823205098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 823205103}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-4-JC4-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 823205103}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &839252868
 GameObject:
   m_ObjectHideFlags: 0
@@ -5885,7 +5906,7 @@ GameObject:
   - component: {fileID: 839252873}
   - component: {fileID: 839252872}
   - component: {fileID: 839252871}
-  - component: {fileID: 839252870}
+  - component: {fileID: 839252874}
   m_Layer: 0
   m_Name: C
   m_TagString: Untagged
@@ -5909,25 +5930,6 @@ Transform:
   m_Father: {fileID: 2037286134}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &839252870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 839252868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 839252873}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-2-SJB3-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 839252873}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &839252871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6043,7 +6045,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 839252870}
+  mPreview: {fileID: 839252874}
+--- !u!114 &839252874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 839252868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 839252873}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-2-SJB3-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 839252873}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &841207980
 GameObject:
   m_ObjectHideFlags: 0
@@ -6323,7 +6344,7 @@ GameObject:
   - component: {fileID: 896281731}
   - component: {fileID: 896281734}
   - component: {fileID: 896281733}
-  - component: {fileID: 896281732}
+  - component: {fileID: 896281735}
   m_Layer: 0
   m_Name: A
   m_TagString: Untagged
@@ -6347,25 +6368,6 @@ Transform:
   m_Father: {fileID: 259766572}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &896281732
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 896281730}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 896281734}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-10-SA1-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 896281734}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &896281733
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6436,7 +6438,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 896281732}
+  mPreview: {fileID: 896281735}
+--- !u!114 &896281735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896281730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 896281734}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-10-SA1-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 896281734}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &914405515
 GameObject:
   m_ObjectHideFlags: 0
@@ -6511,7 +6532,7 @@ GameObject:
   - component: {fileID: 940654286}
   - component: {fileID: 940654285}
   - component: {fileID: 940654284}
-  - component: {fileID: 940654283}
+  - component: {fileID: 940654287}
   m_Layer: 0
   m_Name: B
   m_TagString: Untagged
@@ -6535,25 +6556,6 @@ Transform:
   m_Father: {fileID: 501918201}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &940654283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 940654281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 940654286}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-9-A2-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 940654286}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &940654284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6669,7 +6671,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 940654283}
+  mPreview: {fileID: 940654287}
+--- !u!114 &940654287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940654281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 940654286}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-9-A2-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 940654286}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &977731711
 GameObject:
   m_ObjectHideFlags: 0
@@ -6744,7 +6765,7 @@ GameObject:
   - component: {fileID: 1001241673}
   - component: {fileID: 1001241672}
   - component: {fileID: 1001241671}
-  - component: {fileID: 1001241670}
+  - component: {fileID: 1001241674}
   m_Layer: 0
   m_Name: B
   m_TagString: Untagged
@@ -6768,25 +6789,6 @@ Transform:
   m_Father: {fileID: 1871569963}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1001241670
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1001241668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1001241673}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-3-LT2-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 1001241673}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1001241671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6902,7 +6904,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1001241670}
+  mPreview: {fileID: 1001241674}
+--- !u!114 &1001241674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001241668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1001241673}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-3-LT2-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 1001241673}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1027533681
 GameObject:
   m_ObjectHideFlags: 0
@@ -7420,7 +7441,7 @@ GameObject:
   - component: {fileID: 1217512048}
   - component: {fileID: 1217512051}
   - component: {fileID: 1217512050}
-  - component: {fileID: 1217512049}
+  - component: {fileID: 1217512052}
   m_Layer: 0
   m_Name: D
   m_TagString: Untagged
@@ -7444,25 +7465,6 @@ Transform:
   m_Father: {fileID: 259766572}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1217512049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1217512047}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1217512051}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-10-SA4-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 1217512051}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1217512050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7557,7 +7559,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1217512049}
+  mPreview: {fileID: 1217512052}
+--- !u!114 &1217512052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217512047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1217512051}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-10-SA4-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 1217512051}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1224254844
 GameObject:
   m_ObjectHideFlags: 0
@@ -7694,7 +7715,7 @@ GameObject:
   - component: {fileID: 1278599450}
   - component: {fileID: 1278599449}
   - component: {fileID: 1278599448}
-  - component: {fileID: 1278599447}
+  - component: {fileID: 1278599451}
   m_Layer: 0
   m_Name: C
   m_TagString: Untagged
@@ -7718,25 +7739,6 @@ Transform:
   m_Father: {fileID: 501918201}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1278599447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1278599445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1278599450}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-9-A3-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 1278599450}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1278599448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7852,7 +7854,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1278599447}
+  mPreview: {fileID: 1278599451}
+--- !u!114 &1278599451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278599445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1278599450}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-9-A3-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 1278599450}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1284112029
 GameObject:
   m_ObjectHideFlags: 0
@@ -7896,7 +7917,7 @@ GameObject:
   - component: {fileID: 1350828966}
   - component: {fileID: 1350828965}
   - component: {fileID: 1350828964}
-  - component: {fileID: 1350828963}
+  - component: {fileID: 1350828967}
   m_Layer: 0
   m_Name: D
   m_TagString: Untagged
@@ -7920,25 +7941,6 @@ Transform:
   m_Father: {fileID: 501918201}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1350828963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1350828961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1350828966}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-9-A4-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 1350828966}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1350828964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8054,7 +8056,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1350828963}
+  mPreview: {fileID: 1350828967}
+--- !u!114 &1350828967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350828961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1350828966}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-9-A4-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 1350828966}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1378540651
 GameObject:
   m_ObjectHideFlags: 0
@@ -8205,7 +8226,7 @@ GameObject:
   - component: {fileID: 1410240772}
   - component: {fileID: 1410240771}
   - component: {fileID: 1410240770}
-  - component: {fileID: 1410240769}
+  - component: {fileID: 1410240773}
   m_Layer: 0
   m_Name: D
   m_TagString: Untagged
@@ -8229,25 +8250,6 @@ Transform:
   m_Father: {fileID: 130781074}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1410240769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1410240767}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1410240772}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-11-CR4-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 1410240772}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1410240770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8363,7 +8365,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1410240769}
+  mPreview: {fileID: 1410240773}
+--- !u!114 &1410240773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410240767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1410240772}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-11-CR4-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 1410240772}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1442703737
 GameObject:
   m_ObjectHideFlags: 0
@@ -8467,7 +8488,7 @@ GameObject:
   - component: {fileID: 1447956472}
   - component: {fileID: 1447956471}
   - component: {fileID: 1447956470}
-  - component: {fileID: 1447956469}
+  - component: {fileID: 1447956473}
   m_Layer: 0
   m_Name: D
   m_TagString: Untagged
@@ -8491,25 +8512,6 @@ Transform:
   m_Father: {fileID: 1895064163}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1447956469
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1447956467}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1447956472}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-5-RH4-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 1447956472}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1447956470
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8625,7 +8627,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1447956469}
+  mPreview: {fileID: 1447956473}
+--- !u!114 &1447956473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1447956467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1447956472}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-5-RH4-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 1447956472}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1522954206
 GameObject:
   m_ObjectHideFlags: 0
@@ -8731,7 +8752,7 @@ GameObject:
   - component: {fileID: 1532569450}
   - component: {fileID: 1532569449}
   - component: {fileID: 1532569448}
-  - component: {fileID: 1532569447}
+  - component: {fileID: 1532569451}
   m_Layer: 0
   m_Name: A
   m_TagString: Untagged
@@ -8755,25 +8776,6 @@ Transform:
   m_Father: {fileID: 1871569963}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1532569447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1532569445}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1532569450}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-3-LT1-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 1532569450}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1532569448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8889,7 +8891,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1532569447}
+  mPreview: {fileID: 1532569451}
+--- !u!114 &1532569451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532569445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1532569450}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-3-LT1-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 1532569450}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1536934410
 GameObject:
   m_ObjectHideFlags: 0
@@ -8902,7 +8923,7 @@ GameObject:
   - component: {fileID: 1536934415}
   - component: {fileID: 1536934414}
   - component: {fileID: 1536934413}
-  - component: {fileID: 1536934412}
+  - component: {fileID: 1536934416}
   m_Layer: 0
   m_Name: A
   m_TagString: Untagged
@@ -8926,25 +8947,6 @@ Transform:
   m_Father: {fileID: 1698352174}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1536934412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1536934410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1536934415}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-7-FN1-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 1536934415}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1536934413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9060,7 +9062,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1536934412}
+  mPreview: {fileID: 1536934416}
+--- !u!114 &1536934416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536934410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1536934415}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-7-FN1-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 1536934415}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1541047895
 GameObject:
   m_ObjectHideFlags: 0
@@ -9282,7 +9303,7 @@ GameObject:
   - component: {fileID: 1602996987}
   - component: {fileID: 1602996986}
   - component: {fileID: 1602996985}
-  - component: {fileID: 1602996984}
+  - component: {fileID: 1602996988}
   m_Layer: 0
   m_Name: C
   m_TagString: Untagged
@@ -9306,25 +9327,6 @@ Transform:
   m_Father: {fileID: 1698352174}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1602996984
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1602996982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1602996987}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-7-FN3-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 1602996987}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1602996985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9440,7 +9442,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1602996984}
+  mPreview: {fileID: 1602996988}
+--- !u!114 &1602996988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602996982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1602996987}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-7-FN3-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 1602996987}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1634875260
 GameObject:
   m_ObjectHideFlags: 0
@@ -9569,7 +9590,7 @@ GameObject:
   - component: {fileID: 1703235912}
   - component: {fileID: 1703235915}
   - component: {fileID: 1703235914}
-  - component: {fileID: 1703235913}
+  - component: {fileID: 1703235916}
   m_Layer: 0
   m_Name: B
   m_TagString: Untagged
@@ -9593,25 +9614,6 @@ Transform:
   m_Father: {fileID: 259766572}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1703235913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1703235911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1703235915}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-10-SA2-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 1703235915}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1703235914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9706,7 +9708,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1703235913}
+  mPreview: {fileID: 1703235916}
+--- !u!114 &1703235916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703235911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1703235915}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-10-SA2-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 1703235915}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1751433959
 GameObject:
   m_ObjectHideFlags: 0
@@ -9915,7 +9936,7 @@ GameObject:
   - component: {fileID: 1819513396}
   - component: {fileID: 1819513395}
   - component: {fileID: 1819513394}
-  - component: {fileID: 1819513393}
+  - component: {fileID: 1819513397}
   m_Layer: 0
   m_Name: A
   m_TagString: Untagged
@@ -9939,25 +9960,6 @@ Transform:
   m_Father: {fileID: 84429466}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1819513393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1819513391}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1819513396}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-4-JC1-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 1819513396}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1819513394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10073,7 +10075,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1819513393}
+  mPreview: {fileID: 1819513397}
+--- !u!114 &1819513397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819513391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1819513396}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-4-JC1-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 1819513396}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1822404113
 GameObject:
   m_ObjectHideFlags: 0
@@ -10117,7 +10138,7 @@ GameObject:
   - component: {fileID: 1824434605}
   - component: {fileID: 1824434604}
   - component: {fileID: 1824434603}
-  - component: {fileID: 1824434602}
+  - component: {fileID: 1824434606}
   m_Layer: 0
   m_Name: B
   m_TagString: Untagged
@@ -10141,25 +10162,6 @@ Transform:
   m_Father: {fileID: 888813942}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1824434602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1824434600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1824434605}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-12-MI2-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 1824434605}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1824434603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10275,7 +10277,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1824434602}
+  mPreview: {fileID: 1824434606}
+--- !u!114 &1824434606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1824434600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1824434605}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-12-MI2-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 1824434605}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1826826467
 GameObject:
   m_ObjectHideFlags: 0
@@ -10350,7 +10371,7 @@ GameObject:
   - component: {fileID: 1857759508}
   - component: {fileID: 1857759507}
   - component: {fileID: 1857759506}
-  - component: {fileID: 1857759505}
+  - component: {fileID: 1857759509}
   m_Layer: 0
   m_Name: B
   m_TagString: Untagged
@@ -10374,25 +10395,6 @@ Transform:
   m_Father: {fileID: 1924026283}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1857759505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1857759503}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1857759508}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-6-MA2-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 1857759508}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1857759506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10508,7 +10510,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1857759505}
+  mPreview: {fileID: 1857759509}
+--- !u!114 &1857759509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857759503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1857759508}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-6-MA2-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 1857759508}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1871569962
 GameObject:
   m_ObjectHideFlags: 0
@@ -10556,7 +10577,7 @@ GameObject:
   - component: {fileID: 1872929319}
   - component: {fileID: 1872929318}
   - component: {fileID: 1872929317}
-  - component: {fileID: 1872929316}
+  - component: {fileID: 1872929320}
   m_Layer: 0
   m_Name: D
   m_TagString: Untagged
@@ -10580,25 +10601,6 @@ Transform:
   m_Father: {fileID: 888813942}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1872929316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1872929314}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1872929319}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-12-MI4-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 1872929319}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1872929317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10714,7 +10716,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1872929316}
+  mPreview: {fileID: 1872929320}
+--- !u!114 &1872929320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872929314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1872929319}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-12-MI4-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 1872929319}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1881011275
 GameObject:
   m_ObjectHideFlags: 0
@@ -10727,7 +10748,7 @@ GameObject:
   - component: {fileID: 1881011280}
   - component: {fileID: 1881011279}
   - component: {fileID: 1881011278}
-  - component: {fileID: 1881011277}
+  - component: {fileID: 1881011281}
   m_Layer: 0
   m_Name: A
   m_TagString: Untagged
@@ -10751,25 +10772,6 @@ Transform:
   m_Father: {fileID: 1924026283}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1881011277
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1881011275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1881011280}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-6-MA1-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 1881011280}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1881011278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10885,7 +10887,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1881011277}
+  mPreview: {fileID: 1881011281}
+--- !u!114 &1881011281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1881011275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1881011280}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-6-MA1-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 1881011280}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1895064162
 GameObject:
   m_ObjectHideFlags: 0
@@ -11120,7 +11141,7 @@ GameObject:
   - component: {fileID: 1975934383}
   - component: {fileID: 1975934382}
   - component: {fileID: 1975934381}
-  - component: {fileID: 1975934380}
+  - component: {fileID: 1975934384}
   m_Layer: 0
   m_Name: B
   m_TagString: Untagged
@@ -11144,25 +11165,6 @@ Transform:
   m_Father: {fileID: 84429466}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1975934380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1975934378}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 1975934383}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-4-JC2-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 1975934383}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1975934381
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11278,7 +11280,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1975934380}
+  mPreview: {fileID: 1975934384}
+--- !u!114 &1975934384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1975934378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 1975934383}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-4-JC2-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 1975934383}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &2036618627
 GameObject:
   m_ObjectHideFlags: 0
@@ -11357,7 +11378,7 @@ GameObject:
   - component: {fileID: 2045374804}
   - component: {fileID: 2045374803}
   - component: {fileID: 2045374802}
-  - component: {fileID: 2045374801}
+  - component: {fileID: 2045374805}
   m_Layer: 0
   m_Name: D
   m_TagString: Untagged
@@ -11381,25 +11402,6 @@ Transform:
   m_Father: {fileID: 325333664}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2045374801
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2045374799}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 2045374804}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-8-CA4-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 2045374804}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &2045374802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11515,7 +11517,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 2045374801}
+  mPreview: {fileID: 2045374805}
+--- !u!114 &2045374805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2045374799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 2045374804}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-8-CA4-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 2045374804}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &2062843961
 GameObject:
   m_ObjectHideFlags: 0
@@ -11528,7 +11549,7 @@ GameObject:
   - component: {fileID: 2062843966}
   - component: {fileID: 2062843965}
   - component: {fileID: 2062843964}
-  - component: {fileID: 2062843963}
+  - component: {fileID: 2062843967}
   m_Layer: 0
   m_Name: D
   m_TagString: Untagged
@@ -11552,25 +11573,6 @@ Transform:
   m_Father: {fileID: 879257731}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2062843963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2062843961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 2062843966}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-1-CC4-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 2062843966}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &2062843964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11686,7 +11688,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 2062843963}
+  mPreview: {fileID: 2062843967}
+--- !u!114 &2062843967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2062843961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 2062843966}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-1-CC4-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 2062843966}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &2063515045
 GameObject:
   m_ObjectHideFlags: 0
@@ -11802,7 +11823,7 @@ GameObject:
   - component: {fileID: 2084812690}
   - component: {fileID: 2084812689}
   - component: {fileID: 2084812688}
-  - component: {fileID: 2084812687}
+  - component: {fileID: 2084812691}
   m_Layer: 0
   m_Name: C
   m_TagString: Untagged
@@ -11826,25 +11847,6 @@ Transform:
   m_Father: {fileID: 1871569963}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2084812687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2084812685}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 2084812690}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-3-LT3-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 2084812690}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &2084812688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11960,7 +11962,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 2084812687}
+  mPreview: {fileID: 2084812691}
+--- !u!114 &2084812691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084812685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 2084812690}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-3-LT3-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 2084812690}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &2096083086
 GameObject:
   m_ObjectHideFlags: 0
@@ -12072,7 +12093,7 @@ GameObject:
   - component: {fileID: 2110597965}
   - component: {fileID: 2110597964}
   - component: {fileID: 2110597963}
-  - component: {fileID: 2110597962}
+  - component: {fileID: 2110597966}
   m_Layer: 0
   m_Name: B
   m_TagString: Untagged
@@ -12096,25 +12117,6 @@ Transform:
   m_Father: {fileID: 1895064163}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2110597962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2110597960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mObserverBehaviour: {fileID: 2110597965}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: PC-5-RH2-2
-  mDatasetName: Vuforia/LibroDeCoyacan.xml
-  mCastedBehaviour: {fileID: 2110597965}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &2110597963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12230,7 +12232,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 2110597962}
+  mPreview: {fileID: 2110597966}
+--- !u!114 &2110597966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2110597960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mObserverBehaviour: {fileID: 2110597965}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: PC-5-RH2-2
+  mDatasetName: Vuforia/LibroDeCoyacan.xml
+  mCastedBehaviour: {fileID: 2110597965}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &2112146561
 GameObject:
   m_ObjectHideFlags: 0
